@@ -2,6 +2,10 @@ x = "abdullah maroof"
 y = 20
 z = 12.76
 a = 12j
+print(x)
+print(y)
+print(z)
+print(a)
 print(type(x))
 print(type(y))
 print(type(z))
