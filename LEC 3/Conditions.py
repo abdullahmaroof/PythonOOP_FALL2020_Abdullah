@@ -9,7 +9,7 @@ if marks >=50:
 print("----------------------")
 
 grade = "B+"
-if grade == "A+" or grade == "A-":
+if grade == "A+" or grade == "A-" or grade == "B+":
     print("Ali is pass")
 else:
     print("Ali is fail")
