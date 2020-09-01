@@ -6,3 +6,11 @@ print(x)
 print(type(x))
 print("---------------------------")
 
+#boolean
+
+y = 20
+print(bool(y))
+z = bool("Abdullah")
+print(z)
+print("---------------------------")
+
