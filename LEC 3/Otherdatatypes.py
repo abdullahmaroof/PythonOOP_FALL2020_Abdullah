@@ -23,3 +23,7 @@ print(type(a))
 print(type(b))
 print("---------------------------")
 
+#set
+d = {20, 18, 15, 10}
+print(d)
+print(type)
