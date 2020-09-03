@@ -35,10 +35,10 @@ print("checking by while loop")
 lowerrang = int(input("Enter start range of table: "))
 upperrang = int(input("Enter end range of table: "))
 while lowerrang <= upperrang:
-    if eachnum %2 == 0:
-        print("The number is even: ",eachnum)
+    if lowerrang %2 == 0:
+        print("The number is even: ",lowerrang)
     else:
-        print("The number is odd: ", eachnum)
+        print("The number is odd: ", lowerrang)
     lowerrang += 1
 print("\n------------------------------\n")
 print("**********Q3 END******************\n\n")
