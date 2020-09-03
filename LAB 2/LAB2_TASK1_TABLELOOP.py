@@ -6,8 +6,9 @@ print("*********Table with While loop***********")
 
 
 table = int(input("Enter a number to get its table"))
-i = int(input("Enter a number which will end your table"))
-y = 1
+y = int(input("Enter start range of table"))
+i = int(input("Enter end range of table"))
+
 while y <= i:
     x = table * y
     print(table," * ",y," = ",x)
