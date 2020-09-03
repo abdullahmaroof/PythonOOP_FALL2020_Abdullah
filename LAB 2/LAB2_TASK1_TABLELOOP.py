@@ -23,6 +23,6 @@ tablenum = int(input("Enter a number to get its table: "))
 lowerrang = int(input("Enter start range of table: "))
 upperrang = int(input("Enter end range of table: "))
 upperrang += 1
-for ran_ in range(lowerrang,upperrang):
+for each_num in range(lowerrang,upperrang):
     ans = tablenum*ran_
     print(tablenum," * ",ran_," = ",ans)
