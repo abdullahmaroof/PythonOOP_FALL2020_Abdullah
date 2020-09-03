@@ -22,6 +22,7 @@ print("*********Table with for loop******************")
 table = int(input("Enter a number to get its table: "))
 y = int(input("Enter start range of table: "))
 i = int(input("Enter end range of table: "))
+i += 1
 for c in range(y,i):
     x=table*c
     print(table," * ",c," = ",x)
