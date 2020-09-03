@@ -31,7 +31,7 @@ print("**********Q2 END******************\n\n")
 
 #by using while loop
 print("**********Q3 start******************")
-print("checking by for loop")
+print("checking by while loop")
 lowerrang = int(input("Enter start range of table: "))
 upperrang = int(input("Enter end range of table: "))
 while lowerrang <= upperrang:
