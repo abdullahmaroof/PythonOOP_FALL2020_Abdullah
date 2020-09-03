@@ -21,3 +21,10 @@ for table in range(lower_range,upper_range + 1):
     print(tablenum, " * ", table, " = ", ans)
 print("------------------------------------\n")
 
+#nested for loop
+print("Make a right angle triangle")
+rows = int(input("Enter a rows: "))
+for i in range(0,rows):
+    for k in range(0,i+1):
+        print("*",end="")
+    print("")
