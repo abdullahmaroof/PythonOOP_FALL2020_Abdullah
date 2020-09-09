@@ -6,11 +6,11 @@ std_name = []
 std_father_name = []
 std_section = []
 std_dep = []
-press = 1
-condition = 0
+condition = 1
+index = 0
 print("Student record system")
 print("-----------------------------------\n")
-while condition < press:
+while index < condition  :
     std_name.append(input("Enter name of new student: "))
     std_father_name.append(input("Enter father name of new student: "))
     std_roll_no.append(input("Enter roll no of new student: "))
@@ -19,6 +19,6 @@ while condition < press:
     print("---------------------------------------------------------\n")
     print("Do you want to enter a new record of student")
     enter = int(input("press 1 to enter or press 0 to save record: "))
-    condition = condition + press
-    press = press + enter
+    index = index + condition
+    condition = condition + enter
 print("Your record is saved successfully!!!")
