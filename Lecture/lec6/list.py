@@ -37,3 +37,7 @@ y = digits.index(89)
 print(digits)
 print(y)
 print("-----------------------\n\n")
+
+num = [12, 267, 89, 12, 34, 38, 21]
+print(num[3])
+print("-----------------------\n\n")
