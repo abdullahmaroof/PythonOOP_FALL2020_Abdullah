@@ -31,3 +31,9 @@ color = ["orange", "yellow", "grey", "blue", "red"]
 color.pop(1)
 print(color)
 print("-----------------------\n\n")
+
+digits = [12, 34, 12, 4, 21, 54, 87, 19, 27, 19, 27, 89, 37, 18, 17, 29, 10, 12, 36, 89]
+y = digits.index(89)
+print(digits)
+print(y)
+print("-----------------------\n\n")
