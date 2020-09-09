@@ -26,3 +26,8 @@ list_num = [12, 34, 65, 32]
 list_num.remove(65)
 print(list_num)
 print("-----------------------")
+
+color = ["orange", "yellow", "grey", "blue", "red"]
+color.pop(1)
+print(color)
+print("-----------------------\n\n")
