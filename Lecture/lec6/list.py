@@ -10,3 +10,8 @@ std_list.sort()
 for x in std_list:
     print(x)
 print("-----------------------")
+
+color = ["orange", "yellow", "grey", "blue", "red"]
+color.pop()
+print(color)
+print("-----------------------")
