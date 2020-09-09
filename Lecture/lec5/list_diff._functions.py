@@ -25,3 +25,10 @@ bsse_2A.append(350)
 print(bsse_1A)
 print(bsse_2A)
 print("---------------------------------------")
+
+bsse_2A = [40, 200, 460, 900, 200]
+bsse_1A = bsse_2A.copy()
+bsse_1A.insert(3,30)
+print(bsse_1A)
+print(bsse_2A)
+print("---------------------------------------")
