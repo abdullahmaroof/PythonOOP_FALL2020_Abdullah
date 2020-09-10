@@ -7,7 +7,7 @@ std_section = []
 std_dep = []
 print("Student record system")
 print("-----------------------------------\n")
-condition = int(input("Tell how many student data you want to enter"))
+condition = int(input("Tell how many student data you want to enter: "))
 print("-----------------------------------\n")
 std_index = 0
 while (std_index < condition):
@@ -17,5 +17,12 @@ while (std_index < condition):
     std_section.append(input("Enter section of new student: "))
     std_dep.append(input("Enter department of new student: "))
     print("---------------------------------------------------------\n")
-    std_index = + 1
+    std_index = std_index + 1
+
 print("Your record is saved successfully!!!")
+print("---------------------------------------------------------\n")
+print(std_roll_no)
+print(std_name)
+print(std_father_name)
+print(std_section)
+print(std_dep)
