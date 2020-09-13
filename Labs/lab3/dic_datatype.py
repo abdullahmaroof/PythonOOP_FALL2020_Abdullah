@@ -35,3 +35,9 @@ for x in std1.values():
     print(x)
 print("-------------------\n")
 
+print("Use of items() in dictionary\n")
+std1 = {"Name": "Shayan Gill", "Roll No": "BDSM-S20-020", "Section": "3A"}
+for x, y in std1.items():
+    print(x, y)
+print("-------------------\n")
+
