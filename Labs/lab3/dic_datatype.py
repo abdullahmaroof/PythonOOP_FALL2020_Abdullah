@@ -29,3 +29,9 @@ for value in std1:
     print(std1[value])
 print("-------------------\n")
 
+print("Use of values() in dictionary\n")
+std1 = {"Name": "Shayan Gill", "Roll No": "BDSM-S20-020", "Section": "3A"}
+for x in std1.values():
+    print(x)
+print("-------------------\n")
+
