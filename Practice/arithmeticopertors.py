@@ -15,3 +15,10 @@ y = 89
 ans = x - y
 print(ans)
 print("-------------------------------------\n")
+
+print("\nMultiplication")
+x = 4
+y = 8
+ans = x * y
+print(ans)
+print("-------------------------------------\n")
