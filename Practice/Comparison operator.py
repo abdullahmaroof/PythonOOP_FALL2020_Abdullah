@@ -23,3 +23,15 @@ y = 23
 print(x < y)
 print("-------------------------------")
 
+print("\n greater than and equal operator")
+x = 5
+y = 5
+print(x >= y)
+print("-------------------------------")
+
+print("\n less than and equal operator")
+x = 5
+y = 23
+print(x <= y)
+print("-------------------------------")
+
