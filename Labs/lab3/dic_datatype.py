@@ -19,7 +19,8 @@ std1["Roll No"] = "BSEM-S20-001"
 print(std1)
 print("-------------------\n")
 
-print("Using for loop in dictionary\n")
-for x in std1:
-    print(x)
+print("Using for loop in dictionary to get key\n")
+for key in std1:
+    print(key)
+print("-------------------\n")
 
