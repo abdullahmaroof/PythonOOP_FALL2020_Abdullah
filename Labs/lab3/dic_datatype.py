@@ -51,3 +51,9 @@ print("legth of dictionary\n")
 std1 = {"Name": "Shayan Gill", "Roll No": "BDSM-S20-020", "Section": "3A"}
 print(len(std1))
 print("-------------------\n")
+
+print("Adding new item in dictionary\n")
+std1 = {"Name": "Shayan Gill", "Roll No": "BDSM-S20-020", "Section": "3A"}
+std1["Email"] = "bdsm-s20-020@superior.edu.pk"
+print(std1)
+print("-------------------\n")
