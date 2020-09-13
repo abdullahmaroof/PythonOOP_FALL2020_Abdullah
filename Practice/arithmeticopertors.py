@@ -33,6 +33,20 @@ print("-------------------------------------\n")
 print("\nRemindar")
 x = 1098
 y = 89
-ans = x / y
+ans = x % y
+print(ans)
+print("-------------------------------------\n")
+
+print("\nFloor division")
+x = 67
+y = 7
+ans = x // y
+print(ans)
+print("-------------------------------------\n")
+
+print("\nExponentiation")
+x = 4
+y = 3
+ans = x ** y
 print(ans)
 print("-------------------------------------\n")
