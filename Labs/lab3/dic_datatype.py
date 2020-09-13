@@ -62,3 +62,14 @@ print("Removing an item from dictionary\n")
 std1.pop("Section")
 print(std1)
 print("-------------------\n")
+
+print("Removing an item from dictionary by popitems()\n")
+std1.popitem()
+print(std1)
+print("-------------------\n")
+
+print("Removing an item from dictionary by del\n")
+std1 = {"Name": "Shayan Gill", "Roll No": "BDSM-S20-020", "Section": "3A"}
+del std1["Name"]
+print(std1)
+print("-------------------\n")
