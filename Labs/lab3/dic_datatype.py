@@ -8,3 +8,8 @@ print("Accessing an item from dictionary\n")
 access = std1["Roll No"]
 print(access)
 print("-------------------\n")
+
+print("Accessing an item from dictionary by get()\n")
+access = std1.get("Section")
+print(access)
+print("-------------------\n")
