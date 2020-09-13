@@ -47,3 +47,7 @@ if "Name" in std1:
     print("Yes, name of student is in the dictionary: ",std1["Name"])
 print("-------------------\n")
 
+print("legth of dictionary\n")
+std1 = {"Name": "Shayan Gill", "Roll No": "BDSM-S20-020", "Section": "3A"}
+print(len(std1))
+print("-------------------\n")
