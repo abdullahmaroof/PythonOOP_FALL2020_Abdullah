@@ -80,6 +80,48 @@ std1.clear()
 print(std1)
 print("-------------------\n")
 
+print("Copy of dictionary by copy()\n")
+std1 = {"Name": "Shayan Gill", "Roll No": "BDSM-S20-020", "Section": "3A"}
+std2 = std1.copy()
+print(std2)
+print("-------------------\n")
+
+print("Copy of dictionary by dict()\n")
+std1 = {"Name": "Shayan Gill", "Roll No": "BDSM-S20-020", "Section": "3A"}
+std2 = dict(std1)
+print(std2)
+print("-------------------\n")
+
+print("Nested Dictionary\n")
+A2_std = {
+    "std1": {
+        "Name": "Abdullah Maroof",
+        "Roll no": "BAIM-F19-007",
+    },
+    "std2": {
+        "Name": "Aneesa Ashraf",
+        "Roll no": "BAIM-S20-004",
+    }
+}
+print(A2_std)
+print("-------------------\n")
+
+print("Another way of Nested Dictionary\n")
+std1 = {
+        "Name": "Abdullah Maroof",
+        "Roll no": "BAIM-F19-007",
+}
+std2 = {
+        "Name": "Aneesa Ashraf",
+        "Roll no": "BAIM-S20-004",
+}
+A2_std = {
+    "student-1": std1,
+    "student-2": std2,
+}
+print(A2_std)
+print("-------------------\n")
+
 print("Removing whole dictionary by del\n")
 std1 = {"Name": "Shayan Gill", "Roll No": "BDSM-S20-020", "Section": "3A"}
 del std1
