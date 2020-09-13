@@ -22,3 +22,10 @@ y = 8
 ans = x * y
 print(ans)
 print("-------------------------------------\n")
+
+print("\nDivision")
+x = 45
+y = 5
+ans = x / y
+print(ans)
+print("-------------------------------------\n")
