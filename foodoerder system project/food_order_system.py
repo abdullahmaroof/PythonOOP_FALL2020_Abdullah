@@ -6,7 +6,7 @@ print("-                                                          -")
 print("------------------------------------------------------------")
 print("\n- * Press 1 to login to our system                         -")
 print("- * Press 2 to signup")
-press = int(input("Press a key: "))
+press = int(input("- Press a key: "))
 if press == 1:
     print("")
     print("------------------------------------------------------------")
@@ -25,6 +25,23 @@ if press == 1:
             print("-                                                          -")
             print("-                  Welcome to our system                   -")
             print("-                                                          -")
+            print("- Press 1 to see your personal info                        -")
+            print("- Press 2 to order food                                    -")
+            print("- Press 3 to see about our system                          -")
+            press = int(input("- Press a key: "))
+            if press == 1:
+                print("")
+            elif press == 2:
+                print("")
+            elif press == 3:
+                print("")
+            else:
+                print("")
+                print("------------------------------------------------------------")
+                print("-                                                          -")
+                print("-                     Press wrong key                      -")
+                print("-                                                          -")
+                print("------------------------------------------------------------")
 elif press == 2:
     print("")
     print("------------------------------------------------------------")
