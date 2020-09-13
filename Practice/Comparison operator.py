@@ -17,5 +17,9 @@ y = 23
 print(x > y)
 print("-------------------------------")
 
-
+print("\n less than operator")
+x = 5
+y = 23
+print(x < y)
+print("-------------------------------")
 
