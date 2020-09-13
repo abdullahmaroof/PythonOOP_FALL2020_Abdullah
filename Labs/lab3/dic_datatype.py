@@ -57,3 +57,8 @@ std1 = {"Name": "Shayan Gill", "Roll No": "BDSM-S20-020", "Section": "3A"}
 std1["Email"] = "bdsm-s20-020@superior.edu.pk"
 print(std1)
 print("-------------------\n")
+
+print("Removing an item from dictionary\n")
+std1.pop("Section")
+print(std1)
+print("-------------------\n")
