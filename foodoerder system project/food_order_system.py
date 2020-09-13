@@ -31,7 +31,15 @@ elif press == 2:
     print("-                    Welcome to signup                     -")
     print("-                    *****************                     -")
     print("-                                                          -")
-
+    print("- Fill up the signup form                                  -")
+    print("-                                                          -")
+    username = input("- Name: ")
+    email = input("- Email: ")
+    age = int(input("- Age: "))
+    print("- Password must contain alphanumeric data                  -")
+    password = input("- Password: ")
+    print("-                                                          -")
+    print("------------------------------------------------------------")
 else:
     print("")
     print("------------------------------------------------------------")
