@@ -74,6 +74,12 @@ del std1["Name"]
 print(std1)
 print("-------------------\n")
 
+print("Clearing dictionary by clear()\n")
+std1 = {"Name": "Shayan Gill", "Roll No": "BDSM-S20-020", "Section": "3A"}
+std1.clear()
+print(std1)
+print("-------------------\n")
+
 print("Removing whole dictionary by del\n")
 std1 = {"Name": "Shayan Gill", "Roll No": "BDSM-S20-020", "Section": "3A"}
 del std1
