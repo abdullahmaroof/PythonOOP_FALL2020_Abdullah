@@ -24,3 +24,8 @@ for key in std1:
     print(key)
 print("-------------------\n")
 
+print("Using for loop in dictionary to get values\n")
+for value in std1:
+    print(std1[value])
+print("-------------------\n")
+
