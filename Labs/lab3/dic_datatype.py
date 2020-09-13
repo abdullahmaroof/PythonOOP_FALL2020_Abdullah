@@ -122,6 +122,11 @@ A2_std = {
 print(A2_std)
 print("-------------------\n")
 
+print("New dictionary by dict()\n")
+std1 = dict(Name = "Nisar Akram", Rollno = "BSEM-S20-005", Section = "2A")
+print(std1)
+print("-------------------\n")
+
 print("Removing whole dictionary by del\n")
 std1 = {"Name": "Shayan Gill", "Roll No": "BDSM-S20-020", "Section": "3A"}
 del std1
