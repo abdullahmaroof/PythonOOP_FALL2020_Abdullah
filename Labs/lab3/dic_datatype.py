@@ -41,3 +41,9 @@ for x, y in std1.items():
     print(x, y)
 print("-------------------\n")
 
+print("Use of \"if\" & \"in\" in dictionary\n")
+std1 = {"Name": "Shayan Gill", "Roll No": "BDSM-S20-020", "Section": "3A"}
+if "Name" in std1:
+    print("Yes, name of student is in the dictionary: ",std1["Name"])
+print("-------------------\n")
+
