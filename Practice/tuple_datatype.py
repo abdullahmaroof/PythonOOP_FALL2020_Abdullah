@@ -23,5 +23,11 @@ print("-----------------------------------------")
 
 print("\nAccessing tuple item by negative index range\n")
 std_name = ("Abdullah","Aneesa","Rehan","Shifa","Nisar","Sami","Waqas")
-print(std_name[1:5])
+print(std_name[-5:-2])
+print("-----------------------------------------")
+
+print("\nAccessing tuple items by for loop\n")
+std_name = ("Abdullah","Aneesa","Rehan","Shifa","Nisar","Sami","Waqas")
+for name in std_name:
+    print(name)
 print("-----------------------------------------")
