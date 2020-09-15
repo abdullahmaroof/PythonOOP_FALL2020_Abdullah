@@ -43,3 +43,24 @@ std_name = ("Abdullah","Aneesa","Rehan","Shifa","Nisar","Sami","Waqas")
 if "Daniyal" not in std_name:
     print("This name is not the tuple: Daniyal")
 print("-----------------------------------------")
+
+print("\nlength of a tuple\n")
+std_name = ("Abdullah","Aneesa","Rehan","Shifa","Nisar","Sami","Waqas")
+print(std_name)
+print(len(std_name))
+print("-----------------------------------------")
+
+print("\nAdiing two or more tuples\n")
+std_name1 = ("Abdullah","Aneesa","Rehan","Shifa","Nisar","Sami","Waqas")
+std_name2 = ("Usama",)
+std_name = std_name1 + std_name2
+print(std_name)
+print("-----------------------------------------")
+
+print("\nAdiing an item in tuple\n")
+std_name = ("Abdullah","Aneesa","Rehan","Shifa","Nisar","Sami","Waqas")
+std_name[2] = "Usama"
+print(std_name)
+print("We can't add item in tuple")
+print("-----------------------------------------")
+
