@@ -31,3 +31,9 @@ std_name = ("Abdullah","Aneesa","Rehan","Shifa","Nisar","Sami","Waqas")
 for name in std_name:
     print(name)
 print("-----------------------------------------")
+
+print("\nAccessing tuple one item by if\n")
+std_name = ("Abdullah","Aneesa","Rehan","Shifa","Nisar","Sami","Waqas")
+if "Nisar" in std_name:
+    print("This name is the tuple: Nisar")
+print("-----------------------------------------")
