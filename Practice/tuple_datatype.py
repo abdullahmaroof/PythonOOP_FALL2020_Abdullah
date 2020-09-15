@@ -50,17 +50,29 @@ print(std_name)
 print(len(std_name))
 print("-----------------------------------------")
 
-print("\nAdiing two or more tuples\n")
+print("\nAdding two or more tuples\n")
 std_name1 = ("Abdullah","Aneesa","Rehan","Shifa","Nisar","Sami","Waqas")
 std_name2 = ("Usama",)
 std_name = std_name1 + std_name2
 print(std_name)
 print("-----------------------------------------")
 
-print("\nAdiing an item in tuple\n")
+print("\nAnother way of making tuple\n")
+std_name = tuple(("Abdullah","Aneesa","Rehan","Shifa","Nisar","Sami","Waqas"))
+print(std_name)
+print("-----------------------------------------")
+
+print("\nChecking index of item\n")
 std_name = ("Abdullah","Aneesa","Rehan","Shifa","Nisar","Sami","Waqas")
-std_name[2] = "Usama"
+print(std_name.index("Shifa"))
+print("-----------------------------------------")
+
+print("\nAdding an item in tuple\n")
+std_name = ("Abdullah","Aneesa","Rehan","Shifa","Nisar","Sami","Waqas")
+std_name[2] = ("Usama",)
 print(std_name)
 print("We can't add item in tuple")
 print("-----------------------------------------")
+
+
 
