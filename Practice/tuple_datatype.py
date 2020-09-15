@@ -11,4 +11,17 @@ std_name = ("Abdullah","Aneesa","Rehan","Shifa","Nisar","Sami","Waqas")
 print(std_name[3])
 print("-----------------------------------------")
 
+print("\nAccessing tuple item by negative index\n")
+std_name = ("Abdullah","Aneesa","Rehan","Shifa","Nisar","Sami","Waqas")
+print(std_name[-6])
+print("-----------------------------------------")
 
+print("\nAccessing tuple item by postive index range\n")
+std_name = ("Abdullah","Aneesa","Rehan","Shifa","Nisar","Sami","Waqas")
+print(std_name[1:5])
+print("-----------------------------------------")
+
+print("\nAccessing tuple item by negative index range\n")
+std_name = ("Abdullah","Aneesa","Rehan","Shifa","Nisar","Sami","Waqas")
+print(std_name[1:5])
+print("-----------------------------------------")
