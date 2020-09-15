@@ -32,8 +32,14 @@ for name in std_name:
     print(name)
 print("-----------------------------------------")
 
-print("\nAccessing tuple one item by if\n")
+print("\nchecking an item in tuple by if & in\n")
 std_name = ("Abdullah","Aneesa","Rehan","Shifa","Nisar","Sami","Waqas")
 if "Nisar" in std_name:
     print("This name is the tuple: Nisar")
+print("-----------------------------------------")
+
+print("\nchecking an item in tuple by if & not in\n")
+std_name = ("Abdullah","Aneesa","Rehan","Shifa","Nisar","Sami","Waqas")
+if "Daniyal" not in std_name:
+    print("This name is not the tuple: Daniyal")
 print("-----------------------------------------")
