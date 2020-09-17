@@ -36,14 +36,14 @@ class teacher:
     tchSal = ""
 
     def tchintroduction(self):
-        print("---------Teacher Information-----------\n")
+        print("\n\n---------Teacher Introduction-----------\n")
         print("* Teacher Name: ", self.tchName)
         print("* Teacher Subject: ", self.tchSubject)
         print("* Teacher Sallery: ", self.tchSal,"RS")
         print("--------------------------------------------------")
 
-univertydata = university
-univertydata.uniName = "Oxford University"
-univertydata.uniCity = "London"
-univertydata.uniAge = 100
-univertydata.uniInformation(self=university)
+tchdata = teacher
+tchdata.tchName = "Abdullah Maroof"
+tchdata.tchSubject = "Advance web development"
+tchdata.tchSal = 50000
+tchdata.tchintroduction(self=teacher)
