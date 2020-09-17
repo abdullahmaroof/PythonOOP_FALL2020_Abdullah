@@ -1,5 +1,6 @@
 # function
 
+#Simple function
 def stdname():
     print("Student names")
     print("* Abdullah")
@@ -9,6 +10,7 @@ def stdname():
 
 stdname()
 
+#getting data in function by for loop
 def std_name():
     name = []
     for index in range(0, 2):
@@ -16,6 +18,7 @@ def std_name():
     print(name)
 
 std_name()
+
 
 
 
