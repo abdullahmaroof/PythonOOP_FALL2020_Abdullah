@@ -4,7 +4,7 @@
 # Roll no: BAIM-F19-007
 
 # Task-1: Create two classes university and teacher,
-print("\n\n-------------------------Task-1--------------------------\n")
+print("\n\n------------------------- Task-1 --------------------------\n")
 
 # University class will have three variable ---> uniName, uniCity, uniAge
 # University class will have one function ---> University Information ---> which will show all the information of university.
@@ -49,7 +49,77 @@ tchdata.tchSal = 50000
 tchdata.tchintroduction(self=teacher)
 
 #task2
-print("\n\n-------------------------Task-1--------------------------\n")
+print("\n\n------------------------- Task-2 --------------------------\n")
 
 #Create 2 lists one list will contain the 5 objects of university class and second list will contain the 5 objects of teacher class.
 #Then use loops to get the information and introduction of universities and teachers.
+
+# Univeristy data
+
+#uni1 data
+univertydata1 = university
+univertydata1.uniName = "Oxford University"
+univertydata1.uniCity = "London"
+univertydata1.uniAge = 100
+
+#uni2 data
+univertydata2 = university
+univertydata2.uniName = "Superior University"
+univertydata2.uniCity = "Lahore"
+univertydata2.uniAge = 30
+
+#uni3 data
+univertydata3 = university
+univertydata3.uniName = "Education University"
+univertydata3.uniCity = "Lahore"
+univertydata3.uniAge = 80
+
+#uni4 data
+univertydata4 = university
+univertydata4.uniName = "NUST University"
+univertydata4.uniCity = "Islamabad"
+univertydata4.uniAge = 150
+
+#uni5 data
+univertydata5 = university
+univertydata5.uniName = "Cambridge University"
+univertydata5.uniCity = "Newyork"
+univertydata5.uniAge = 120
+
+uniDetails = [univertydata1, univertydata2, univertydata3, univertydata4, univertydata5]
+
+for data in uniDetails:
+    data.uniInformation(self=university)
+
+print("\n------------------------------------------------------------------------")
+#teachers data
+
+#teacher1
+tchdata1 = teacher
+tchdata1.tchName = "Abdullah Maroof"
+tchdata1.tchSubject = "Advance web development"
+tchdata1.tchSal = 50000
+
+#teacher2
+tchdata2 = teacher
+tchdata2.tchName = "Nisar Akram"
+tchdata2.tchSubject = "OOP"
+tchdata2.tchSal = 40000
+
+#teacher3
+tchdata3 = teacher
+tchdata3.tchName = "Qasim Raiz"
+tchdata3.tchSubject = "Artifical Intelligence"
+tchdata3.tchSal = 80000
+
+#teacher1
+tchdata1 = teacher
+tchdata1.tchName = "Abdullah Maroof"
+tchdata1.tchSubject = "Advance web development"
+tchdata1.tchSal = 50000
+
+#teacher1
+tchdata1 = teacher
+tchdata1.tchName = "Abdullah Maroof"
+tchdata1.tchSubject = "Advance web development"
+tchdata1.tchSal = 50000
