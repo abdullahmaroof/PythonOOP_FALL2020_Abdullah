@@ -47,3 +47,9 @@ tchdata.tchName = "Abdullah Maroof"
 tchdata.tchSubject = "Advance web development"
 tchdata.tchSal = 50000
 tchdata.tchintroduction(self=teacher)
+
+#task2
+print("\n\n-------------------------Task-1--------------------------\n")
+
+#Create 2 lists one list will contain the 5 objects of university class and second list will contain the 5 objects of teacher class.
+#Then use loops to get the information and introduction of universities and teachers.
