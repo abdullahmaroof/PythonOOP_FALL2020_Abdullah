@@ -112,14 +112,20 @@ tchdata3.tchName = "Qasim Raiz"
 tchdata3.tchSubject = "Artifical Intelligence"
 tchdata3.tchSal = 80000
 
-#teacher1
-tchdata1 = teacher
-tchdata1.tchName = "Abdullah Maroof"
-tchdata1.tchSubject = "Advance web development"
-tchdata1.tchSal = 50000
+#teacher4
+tchdata4 = teacher
+tchdata4.tchName = "Aneesa Ashraf"
+tchdata4.tchSubject = "English"
+tchdata4.tchSal = 30000
 
-#teacher1
-tchdata1 = teacher
-tchdata1.tchName = "Abdullah Maroof"
-tchdata1.tchSubject = "Advance web development"
-tchdata1.tchSal = 50000
+#teacher5
+tchdata5 = teacher
+tchdata5.tchName = "Daniyal Gulzar"
+tchdata5.tchSubject = "German Language"
+tchdata5.tchSal = 30000
+
+teacherdetail = [tchdata1, tchdata2, tchdata3, tchdata4, tchdata5]
+
+for data in teacherdetail:
+    data.tchintroduction(self=teacher)
+print("\n------------------------------------------------------------------------")
