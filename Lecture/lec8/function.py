@@ -9,11 +9,15 @@ def stdname():
 
 stdname()
 
-def stdname(self):
+def std_name():
     name = []
-    index = 0
-    for name in range(0,2):
-        self.name[index] = str(input("Enter student name"))
-    print(name[index])
+    for index in range(0, 2):
+        name.append(input("Enter name of new student: "))
+    print(name)
 
-stdname()
+std_name()
+
+
+
+
+
