@@ -52,7 +52,10 @@ stdname = stdname2.difference(stdname1)
 print(stdname)
 print("---------------------------------------------\n")
 
+
+
 #Removing an item from set by discard()
 stdname = {"abdullah","Sami","Aneesa","Shifa","Akmal"}
 stdname.discard("Shifa")
 print(stdname)
+
