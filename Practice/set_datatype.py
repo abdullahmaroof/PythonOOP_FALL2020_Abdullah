@@ -42,3 +42,17 @@ stdname = {"abdullah","Sami","Aneesa","Shifa","Akmal"}
 stdname.clear()
 print(stdname)
 print("---------------------------------------------\n")
+
+#difference between two sets
+stdname1 = {"abdullah","Sami","Aneesa","Shifa","Akmal"}
+stdname2 = {"abdullah","Shayan","Raftaar","Shifa","Akmal","Tooba"}
+stdname = stdname1.difference(stdname2)
+print(stdname)
+stdname = stdname2.difference(stdname1)
+print(stdname)
+print("---------------------------------------------\n")
+
+#Removing an item from set by discard()
+stdname = {"abdullah","Sami","Aneesa","Shifa","Akmal"}
+stdname.discard("Shifa")
+print(stdname)
