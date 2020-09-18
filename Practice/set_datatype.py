@@ -7,3 +7,9 @@ print("------------------------------")
 print("Set is same like tuple but it doesn't have key for every item")
 print("It has no fix order everytime you run programmer it order will be change")
 print("-------------------------------------------------\n")
+
+#Accessing items by for loop
+stdname = {"abdullah","Sami","Aneesa","Shifa","Akmal"}
+for name in stdname:
+    print("Student name: ",name)
+print("-----------------------------------------")
