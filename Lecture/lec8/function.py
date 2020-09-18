@@ -11,14 +11,24 @@ def stdname():
 stdname()
 
 #getting data in function by for loop
-def std_name():
+#def std_name():
+ #   name = []
+  #  for index in range(0, 2):
+   #     name.append(input("Enter name of new student: "))
+    #print(name)
+
+#std_name()
+
+#Getting data by user in function by while loop
+def student():
     name = []
-    for index in range(0, 2):
+    index = 0
+    while (index < 2):
         name.append(input("Enter name of new student: "))
+        index = index + 1
     print(name)
 
-std_name()
-
+student()
 
 
 
