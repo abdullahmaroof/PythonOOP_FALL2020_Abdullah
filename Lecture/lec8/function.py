@@ -52,4 +52,14 @@ def stdage():
 
 stdage()
 
+#conditions in function
+def man_age():
+    print("Welcome to your system")
+    age = int(input("Enter your age: "))
+    if age > 18:
+        print("\nYou can go ahead because you are 18+")
+    else:
+        print("\nYou are not 18+, you cannot go into your system")
+    print("Thank you to coming in our system")
 
+man_age()
