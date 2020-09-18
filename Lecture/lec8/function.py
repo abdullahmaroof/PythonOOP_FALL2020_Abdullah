@@ -40,4 +40,16 @@ def std_age():
 
 std_age()
 
+#getting data in function by while loop and user will also tell how many students age
+
+def stdage():
+    age = []
+    endrange = int(input("How many students age you want to enter: "))
+    while 0 < endrange:
+        age.append(input("Enter age of new student: "))
+        endrange = endrange - 1
+    print(age)
+
+stdage()
+
 
