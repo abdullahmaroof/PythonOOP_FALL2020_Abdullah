@@ -12,4 +12,33 @@ print("-------------------------------------------------\n")
 stdname = {"abdullah","Sami","Aneesa","Shifa","Akmal"}
 for name in stdname:
     print("Student name: ",name)
-print("-----------------------------------------")
+print("-----------------------------------------\n")
+
+#checking an item in set
+print("We cannot check index of a item because everytime it is changing order,so we can check this item is in set or not")
+stdname = {"abdullah","Sami","Aneesa","Shifa","Akmal"}
+print("Akmal" in stdname)
+print("-----------------------------------------------\n")
+
+#Adding item in set
+print("If i want to add one item in set i will use add()")
+print("But if i want to add more than one item i will use update()")
+stdname = {"abdullah","Sami","Aneesa","Shifa","Akmal"}
+stdname.add("Farah")
+print(stdname)
+print("-----------------------------")
+stdname.update(["Kamran","Dania","Hafsa"])
+print(stdname)
+print("------------------------------------------------")
+print("\n--------------------------------------------------\n")
+
+#checking length of set
+stdname = {"abdullah","Sami","Aneesa","Shifa","Akmal"}
+print("The lenth of stdname set is:",len(stdname))
+print("---------------------------------------------\n")
+
+#Removing all the items from set by clear()
+stdname = {"abdullah","Sami","Aneesa","Shifa","Akmal"}
+stdname.clear()
+print(stdname)
+print("---------------------------------------------\n")
