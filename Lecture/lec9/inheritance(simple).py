@@ -10,7 +10,11 @@ class svl:
         print("Section: " + self.section)
         print("------------------------------\n")
 
-class student(svl):
+class se(svl):
+    name = ""
+    section = ""
+
+class cs(svl):
     name = ""
     section = ""
 
@@ -26,8 +30,8 @@ cr2.section = "3D"
 cr1.intro()
 cr2.intro()
 
-std1 = student()
-std2 = student()
+std1 = se()
+std2 = se()
 
 std1.name = "Usama"
 std1.section = "2A"
@@ -37,3 +41,15 @@ std2.section = "3D"
 
 std1.intro()
 std2.intro()
+
+std3 = cs()
+std4 = cs()
+
+std3.name = "Ali"
+std3.section = "4A"
+
+std4.name = "Rehan"
+std4.section = "6B"
+
+std3.intro()
+std4.intro()
