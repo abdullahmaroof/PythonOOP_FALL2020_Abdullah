@@ -34,12 +34,12 @@ class animal:
 
 class landanimal(animal):
     def walk(self):
-        print("Animal can walk on land.")
+        print(self.name," can walk on land.")
 
 
 class seaanimal(animal):
     def swim(self):
-        print("Animal can swim in sea.")
+        print(self.name," can swim in sea.")
 
 waterAnimal1 = seaanimal()
 waterAnimal2 = seaanimal()
