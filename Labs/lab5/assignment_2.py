@@ -16,7 +16,7 @@ class animal:
         print("Animal Name: ", self.name)
         print("Animal Color: ", self.color )
         animal.speakAnimal(self)
-        print("------------------------------\n")
+
 
 
     def speakAnimal(self):
@@ -60,6 +60,14 @@ groundanimal2.name = "Horse"
 groundanimal2.color = "Brown"
 
 waterAnimal1.introduceAnimal()
+waterAnimal1.swim()
+print("------------------------------\n")
 waterAnimal2.introduceAnimal()
+waterAnimal2.swim()
+print("------------------------------\n")
 groundanimal1.introduceAnimal()
+groundanimal1.walk()
+print("------------------------------\n")
 groundanimal2.introduceAnimal()
+groundanimal2.walk()
+print("------------------------------\n")
