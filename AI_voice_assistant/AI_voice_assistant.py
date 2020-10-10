@@ -2,6 +2,7 @@ import pyttsx3
 import speech_recognition as sr
 import pyaudio
 import datetime
+import wikipedia
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
@@ -23,10 +24,11 @@ def takeCommand():
     r = sr.Recognizer()
     with sr.Microphone() as source:
         print('Listening...........')
+        r.pause_threshold = 1
         audio = r.listen(source)
     try:
         print('Recognizing............')
-        query = r.recognize_google(audio, language='en-uk')
+        query = r.recognize_google(audio, language='en-pak')
         print(f"User said: {query}\n")
 
     except Exception as e:
@@ -35,4 +37,12 @@ def takeCommand():
     return query
 
 wishme()
-takeCommand()
+while True:
+    query = takeCommand().lower()
+    if 'wikipedia' in query:
+        print("Sreaching Wikipedia")
+        query = query.replace("Wikipedia", "")
+        results = wikipedia.summary(query, sentences=2)
+        speak("According to Wikipedia")
+        print(results)
+        speak(results)
