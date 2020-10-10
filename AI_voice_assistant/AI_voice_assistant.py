@@ -68,5 +68,4 @@ while True:
         music_dir = "D:\\MUSICON\\trending audio"
         songs = os.listdir(music_dir)
         print(songs)
-        songs = random.random()
-        os.startfile(os.path.join(music_dir, songs))
+        os.startfile(os.path.join(music_dir, songs[5]))
