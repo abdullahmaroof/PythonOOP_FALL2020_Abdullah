@@ -3,6 +3,9 @@ import speech_recognition as sr
 import pyaudio
 import datetime
 import wikipedia
+import webbrowser
+import os
+import random
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
@@ -42,7 +45,28 @@ while True:
     if 'wikipedia' in query:
         print("Sreaching Wikipedia")
         query = query.replace("Wikipedia", "")
-        results = wikipedia.summary(query, sentences=2)
+        results = wikipedia.summary(query, sentences=5)
         speak("According to Wikipedia")
         print(results)
         speak(results)
+
+    elif 'open youtube' in query:
+        webbrowser.open("youtube.com")
+
+    elif 'open facebook' in query:
+        webbrowser.open("facebook.com")
+
+    elif 'open gaana' in query:
+        webbrowser.open("gaana.com")
+
+    elif 'open google' in query:
+        webbrowser.open("google.com")
+
+    elif 'open github' in query:
+        webbrowser.open("github.com")
+    elif 'play music' in query:
+        music_dir = "D:\\MUSICON\\trending audio"
+        songs = os.listdir(music_dir)
+        print(songs)
+        songs = random.random()
+        os.startfile(os.path.join(music_dir, songs))
