@@ -47,8 +47,8 @@ if 'abdullah' in query:
     query = takeCommand().lower()
     if '1101' in query:
         speak("Sir abdullah, thank you for verification. pkease tell me how may i help you")
-        #while True:
-        if 1:
+        while True:
+        #if 1:
             query = takeCommand().lower()
             if 'wikipedia' in query:
                 print("Sreaching Wikipedia")
@@ -93,3 +93,10 @@ if 'abdullah' in query:
             elif 'open python' in query:
                 pathPYcharm = "C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.2\\bin\\pycharm64.exe"
                 os.startfile(pathPYcharm)
+    else:
+        speak("Abdullah sir, your code is wrong. Please verify again")
+        speak("If verification code is wrong again, I will shut down system and report it as a security threat")
+else:
+    speak("You are not my Abdullah sir, I cannot follow your commands")
+    speak("I think you are a hacker")
+    speak("I am shuting down my all systems")
