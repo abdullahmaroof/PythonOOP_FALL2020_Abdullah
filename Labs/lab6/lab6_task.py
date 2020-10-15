@@ -11,20 +11,20 @@ class Fruit:
 
 class winterFruit(Fruit):
     def fruitTaste(self, taste):
-        print("The taste of sumer fruit is ", taste)
+        print("The taste of winter fruit is ", taste)
 
     def introduceFruit(self):
-        print("This is summer fruit")
+        print("This is  winter fruit")
         print("Fruit name is ", self.name)
         print("Fruit Color", self.color)
 
 
 class summerFruit(Fruit):
     def fruitTaste(self, taste):
-        print("The taste of sumer fruit is ", taste)
+        print("The taste of summer fruit is ", taste)
 
     def introduceFruit(self):
-        print("This is a winter fruit")
+        print("This is s summer fruit")
         print("Fruit name is ", self.name)
         print("Fruit Color", self.color)
 
