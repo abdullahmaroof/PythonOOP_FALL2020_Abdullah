@@ -19,6 +19,8 @@ class student(University):
         print("You are a student")
         self.intro()
 
+
+
 U1 = University("Abdullah",19)
 U1.intro()
 std1 = student("Samiullah",20)
