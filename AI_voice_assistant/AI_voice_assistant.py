@@ -27,7 +27,7 @@ def takeCommand():
     r = sr.Recognizer()
     with sr.Microphone() as source:
         print('Listening...........')
-        #r.pause_threshold = 0.5
+        r.pause_threshold = 0.5
         audio = r.listen(source)
     try:
         print('Recognizing............')
@@ -96,6 +96,7 @@ if 'abdullah' in query:
     else:
         speak("Abdullah sir, your code is wrong. Please verify again")
         speak("If verification code is wrong again, I will shut down system and report it as a security threat")
+
 else:
     speak("You are not my Abdullah sir, I cannot follow your commands")
     speak("I think you are a hacker")
