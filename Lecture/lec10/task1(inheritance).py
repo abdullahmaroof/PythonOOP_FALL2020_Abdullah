@@ -37,6 +37,3 @@ son2.mother_name = "Shahida"
 son2.child_age = 19
 
 son2.info()
-son3 = +child()
-son3 = son + son2
-print(son3)
