@@ -37,3 +37,5 @@ son2.mother_name = "Shahida"
 son2.child_age = 19
 
 son2.info()
+print(type(son))
+print(type(son2))
