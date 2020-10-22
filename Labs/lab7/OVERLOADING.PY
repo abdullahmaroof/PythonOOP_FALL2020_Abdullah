@@ -5,7 +5,7 @@ class vehicle:
         print("I am simple vehicle with ", self.no_wheel," wheels")
         print("I have a ", self.no_lights," lights")
 
-car1 = vehicle()
-car1.no_wheel = 4
-car1.no_lights = 8
-car1.intro_vehicle()
+trucktar = vehicle()
+trucktar.no_wheel = 4
+trucktar.no_lights = 4
+trucktar.intro_vehicle()
