@@ -5,6 +5,10 @@ root = Tk()
 
 
 lab1 = Label(text="Abdullah")
-lab1.pack(side=BOTTOM)
+lab1.pack()
+
+
+BUT1 = Button(text="Click")
+BUT1.pack()
 
 root.mainloop()
