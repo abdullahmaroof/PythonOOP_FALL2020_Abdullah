@@ -9,13 +9,13 @@ button_open = Button(upper_root, text ="Open", width= 20)
 button_edit = Button(upper_root, text ="Edit", width= 20)
 button_view = Button(upper_root, text = "View", width= 20)
 
-
+upper_root.pack(side=TOP, fill=X)
 button_open.pack(side = LEFT, padx = 10, pady = 10)
 button_edit.pack(side = LEFT, padx = 10, pady = 10)
 button_view.pack(side = LEFT, padx = 10, pady = 10)
 
 
-upper_root.pack(side=TOP, fill=X)
+
 
 #******************************center Root********************
 
