@@ -2,12 +2,31 @@ from tkinter import *
 
 root = Tk()
 
+def open():
+    print("Open new file")
+
+def edit():
+    print("Edit this python file")
+
+def view():
+    print("View more options")
+
+def project():
+    print("See your created project")
+
+def commit():
+    print("Commit your project")
+
+
+def pullreq():
+    print("See your pull request here")
+
 #******************************TOP Root********************
 
 upper_root = Frame(root, bg="light slate gray", height=125)
-button_open = Button(upper_root, text ="Open", width= 20)
-button_edit = Button(upper_root, text ="Edit", width= 20)
-button_view = Button(upper_root, text = "View", width= 20)
+button_open = Button(upper_root, text ="Open", width= 20, command= open)
+button_edit = Button(upper_root, text ="Edit", width= 20, command= edit)
+button_view = Button(upper_root, text = "View", width= 20, command= view)
 
 upper_root.pack(side=TOP, fill=X)
 button_open.pack(side = LEFT, padx = 10, pady = 10)
@@ -24,9 +43,9 @@ left_center_root= Frame(center_root, bg="light grey", width=250, height=700)
 box_leftc_root1 = Frame(left_center_root, width= 250, bg="light grey", height=700)
 box_leftc_root2 = Frame(left_center_root, width= 250, bg="light grey", height=700)
 box_leftc_root3 = Frame(left_center_root, width= 250, bg="light grey", height=700)
-button_PROJECT = Button(box_leftc_root1, text ="Project", width= 20)
-button_commit = Button(box_leftc_root2, text ="Commit", width= 20)
-button_pullrequest = Button(box_leftc_root3, text = "Pull Request", width= 20)
+button_PROJECT = Button(box_leftc_root1, text ="Project", width= 20, command= project)
+button_commit = Button(box_leftc_root2, text ="Commit", width= 20, command= commit)
+button_pullrequest = Button(box_leftc_root3, text = "Pull Request", width= 20, command= pullreq)
 
 
 center_root.pack(fill=BOTH, side=TOP, expand=1)
