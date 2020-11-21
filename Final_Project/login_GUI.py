@@ -2,7 +2,7 @@ from tkinter import *
 from PIL import ImageTk, Image
 root = Tk()
 
-root.geometry("800x550")
+root.geometry("800x520")
 root.title('Online Food Order System')
 root.iconbitmap(r'buy_online_5Wq_icon.ico')
 #*****************upper block*****************************
@@ -31,7 +31,8 @@ top_right_top_bot = Frame(right_top_bot, height=50, bg="gray92")
 bottom_right_top_bot = Frame(right_top_bot, height=50, bg="gray92")
 name_box = Entry(top_right_top_bot, width=25)
 pass_box = Entry(bottom_right_top_bot, width=25)
-bottom_botcenter = Frame(bottom_center, bg="blue", height=80)
+bottom_botcenter = Frame(bottom_center, bg="gray92", height=80)
+login_but = Button(bottom_botcenter, text="LOGIN", width=20, bg="light blue", font=('arial',10,'bold'), activebackground="black", activeforeground="white")
 
 
 center_Root.pack(side=TOP, fill=BOTH, expand=1)
@@ -50,6 +51,7 @@ bottom_right_top_bot.pack(side=TOP, fill=BOTH, expand=1)
 name_box.pack(side=LEFT, pady=10)
 pass_box.pack(side=LEFT, pady=10)
 bottom_botcenter.pack(side=TOP, fill=BOTH, expand=1)
+login_but.pack(pady=20)
 
 
 #*****************upper block*****************************
