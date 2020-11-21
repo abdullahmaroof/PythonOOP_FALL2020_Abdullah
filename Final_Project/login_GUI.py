@@ -26,7 +26,11 @@ top_botcenter = Frame(bottom_center, bg="gray92", height=100)
 left_top_bot = Frame(top_botcenter, height=100, bg="gray92")
 name_label = Label(left_top_bot, text="User Name:  ", font=('arial',12,'bold'), anchor=E, bg="gray92")
 pass_label = Label(left_top_bot, text="Password:  ", font=('arial',12,'bold'), anchor=E, bg="gray92")
-right_top_bot = Frame(top_botcenter, height=100, bg="yellow")
+right_top_bot = Frame(top_botcenter, height=100, bg="gray92")
+top_right_top_bot = Frame(right_top_bot, height=50, bg="gray92")
+bottom_right_top_bot = Frame(right_top_bot, height=50, bg="gray92")
+name_box = Entry(top_right_top_bot, width=25)
+pass_box = Entry(bottom_right_top_bot, width=25)
 bottom_botcenter = Frame(bottom_center, bg="blue", height=80)
 
 
@@ -41,6 +45,10 @@ left_top_bot.pack(side=LEFT, fill=BOTH, expand=1)
 name_label.pack(pady=10, fill=BOTH, expand=1)
 pass_label.pack(pady=10, fill=BOTH, expand=1)
 right_top_bot.pack(side=LEFT, fill=BOTH, expand=1)
+top_right_top_bot.pack(side=TOP, fill=BOTH, expand=1)
+bottom_right_top_bot.pack(side=TOP, fill=BOTH, expand=1)
+name_box.pack(side=LEFT, pady=10)
+pass_box.pack(side=LEFT, pady=10)
 bottom_botcenter.pack(side=TOP, fill=BOTH, expand=1)
 
 
