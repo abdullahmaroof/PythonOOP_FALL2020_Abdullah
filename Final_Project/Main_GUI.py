@@ -12,7 +12,7 @@ title = Label(upper_Root, text="Online Food Order System", bg="light blue", font
 upper_Root.pack(side=TOP, fill=BOTH, expand=1)
 title.pack(pady=30)
 
-#*****************upper block*****************************
+#*****************center block*****************************
 center_Root = Frame(root, bg="gray92", height=320)
 top_center = Frame(center_Root, bg="gray92", height=140)
 pic = Image.open("shopping-bag.png")
@@ -39,7 +39,7 @@ bottom_center.pack(side=TOP, fill=BOTH, expand=1)
 loginadmin_but.pack(pady=20)
 
 
-#*****************upper block*****************************
+#*****************bottom block*****************************
 bottom_Root = Frame(root, bg="light blue", height=50)
 copyRight = Label(bottom_Root, text=" © Copy Rights Reserved, Abdullah Maroof 2020", bg="light blue", font=('arial',12,'bold'))
 
