@@ -4,7 +4,7 @@ from PIL import ImageTk, Image
 
 root = Tk()
 
-root.geometry("800x720")
+root.geometry("800x520")
 root.title('Online Food Order System')
 root.iconbitmap(r'buy_online_5Wq_icon.ico')
 #*****************upper block*****************************
@@ -15,7 +15,7 @@ upper_Root.pack(side=TOP, fill=BOTH, expand=1)
 title.pack(pady=30)
 
 #*****************center block*****************************
-center_Root = Frame(root, bg="gray92", height=800)
+center_Root = Frame(root, bg="gray92", height=400)
 top_center = Frame(center_Root, bg="gray92", height=140)
 pic = Image.open("shopping-bag.png")
 resized = pic.resize((150, 100), Image.ANTIALIAS)
@@ -23,10 +23,10 @@ mypic = ImageTk.PhotoImage(resized)
 image_top_center = Label(top_center, image = mypic)
 center_center = Frame(center_Root, bg="gray92", height=80)
 sub_title = Label(center_center, text="Welcome To System", bg="gray92", font=('arial',20,'underline','bold'))
-bottom_center = Frame(center_Root, bg="orange", height=80)
+bottom_center = Frame(center_Root, bg="gray92", height=80)
 left_bottom_cenroot = Frame(bottom_center, bg="", height=80)
 info_but = Button(left_bottom_cenroot, text="Personal Info", width=25, height=2, bg="light blue", font=('arial',10,'bold'), activebackground="black", activeforeground="white")
-right_bottom_cenroot = Frame(center_center, bg="red", height=80)
+right_bottom_cenroot = Frame(bottom_center, bg="gray92", height=80)
 aboutus_but = Button(right_bottom_cenroot, text="About us", width=25, height=2, bg="light blue", font=('arial',10,'bold'), activebackground="black", activeforeground="white")
 last_center = Frame(center_Root, bg="gray92", height=80)
 orderfood_but = Button(last_center, text="Order Food", width=25, height=2, bg="light blue", font=('arial',10,'bold'), activebackground="black", activeforeground="white")
