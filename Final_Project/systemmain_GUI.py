@@ -1,8 +1,8 @@
 from tkinter import *
 from PIL import ImageTk, Image
 
-
 root = Tk()
+
 
 root.geometry("800x520")
 root.title('Online Food Order System')
