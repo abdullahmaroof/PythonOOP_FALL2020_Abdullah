@@ -3,6 +3,7 @@ from Final_Project.pizza_GUI import call_pizzamenu
 from Final_Project.biryani_GUI import call_biryanimenu
 from tkinter import *
 from PIL import ImageTk, Image
+from Final_Project.burger_gui import call_burgermenu
 
 def call_menu():
     root = Toplevel()
@@ -42,7 +43,7 @@ def call_menu():
     burgerpic = ImageTk.PhotoImage(bu_size)
     burger_label = Label(bframe_left, image= burgerpic)
     bframe_right = Frame(burger_frame, bg="white", height=60)
-    burger_btn = Button(bframe_right,  text="Burger", width=20, bg="light blue", font=('arial',10,'bold'), activebackground="black", activeforeground="white")
+    burger_btn = Button(bframe_right,  text="Burger", command= lambda : call_burgermenu(), width=20, bg="light blue", font=('arial',10,'bold'), activebackground="black", activeforeground="white")
     biryani_frame = Frame(bottom_center, bg="white", height=80)
     biframe_left = Frame(biryani_frame, bg="white", height=80)
     biryani = Image.open("biryani.PNG")
