@@ -97,5 +97,3 @@ def call_menu():
     copyRight.pack(pady=10)
 
     mainloop()
-
-x = call_menu()
