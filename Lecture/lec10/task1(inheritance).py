@@ -22,9 +22,6 @@ class child(parent):
         parent.motorcycle(self)
         print("----------------------------------")
 
-    def __add__(self, other):
-        temp = self.child_age + other.child_age
-        return  temp
 
 son = child()
 son.child_name = "Abdullah"
@@ -43,6 +40,4 @@ son2.child_age = 25
 son2.info()
 
 
-son3 = child()
-son3 = son + son2
-print(son3)
+
