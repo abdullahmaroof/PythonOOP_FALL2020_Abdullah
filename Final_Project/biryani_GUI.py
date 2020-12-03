@@ -1,5 +1,6 @@
 from tkinter import *
 from PIL import ImageTk, Image
+from Final_Project.voice_system import voice_biryani
 
 def call_biryanimenu():
     root = Toplevel()
@@ -185,5 +186,5 @@ def call_biryanimenu():
 
     bottom_Root.pack(side=BOTTOM, fill=BOTH, expand=1)
     copyRight.pack()
-
+    voice_biryani.wishme()
     mainloop()

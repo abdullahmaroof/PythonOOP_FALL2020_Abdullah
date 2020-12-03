@@ -1,6 +1,6 @@
 from tkinter import *
 from PIL import ImageTk, Image
-
+from Final_Project.voice_system import voice_paratharoll
 
 def call_parathamenu():
     root = Toplevel()
@@ -186,5 +186,5 @@ def call_parathamenu():
 
     bottom_Root.pack(side=BOTTOM, fill=BOTH, expand=1)
     copyRight.pack()
-
+    voice_paratharoll.wishme()
     mainloop()
