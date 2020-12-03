@@ -1,5 +1,6 @@
 from tkinter import *
 from PIL import ImageTk, Image
+from Final_Project.voice_system import voice_loginadmin
 
 def call_adminlogin():
     root = Toplevel()
@@ -62,6 +63,6 @@ def call_adminlogin():
 
     bottom_Root.pack(side=BOTTOM, fill=BOTH, expand=1)
     copyRight.pack(pady=10)
-
+    voice_loginadmin.wishme()
     mainloop()
 
