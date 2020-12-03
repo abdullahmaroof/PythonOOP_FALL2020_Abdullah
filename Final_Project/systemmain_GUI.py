@@ -1,6 +1,7 @@
 from tkinter import *
 from PIL import ImageTk, Image
 from Final_Project.foodmenu_GUI import call_menu
+from Final_Project.voice_system import voice_system
 
 def call_system():
     root = Toplevel()
@@ -53,5 +54,5 @@ def call_system():
 
     bottom_Root.pack(side=BOTTOM, fill=BOTH, expand=1)
     copyRight.pack(pady=10)
-
+    voice_system.wishme()
     mainloop()

@@ -1,6 +1,7 @@
 from tkinter import *
 from PIL import ImageTk, Image
 from Final_Project.login_GUI import signin
+from Final_Project.voice_system import voice_signup
 
 def call_signup():
     root = Toplevel()
@@ -81,5 +82,5 @@ def call_signup():
 
     bottom_Root.pack(side=BOTTOM, fill=BOTH, expand=1)
     copyRight.pack(pady=10)
-
+    voice_signup.wishme()
     mainloop()
