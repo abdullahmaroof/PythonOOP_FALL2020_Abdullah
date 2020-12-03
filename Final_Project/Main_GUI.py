@@ -10,7 +10,7 @@ from Final_Project.voice_system import call_voice
 class main_system:
     def __init__(self, root):
         self.root = root
-        root.geometry("800x450")
+        root.state('zoomed')
         root.title('Online Food Order System')
         root.iconbitmap(r'buy_online_5Wq_icon.ico')
         call_voice.wishme()

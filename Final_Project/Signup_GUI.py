@@ -4,13 +4,13 @@ from Final_Project.login_GUI import signin
 from Final_Project.voice_system import voice_signup
 from tkinter import ttk, messagebox
 from sqlite3 import *
-con = connect("userdata.db")
+from Final_Project.signup_database import *
 
 def call_signup():
     class gui_signup:
         def __init__(self, root):
             self.root = root
-            root.geometry("800x690")
+            root.state('zoomed')
             root.title('Online Food Order System')
             root.iconbitmap(r'buy_online_5Wq_icon.ico')
             #*****************upper block*****************************
@@ -101,16 +101,16 @@ def call_signup():
                 messagebox.showerror("Password","Please enter same password in confirm password", parent=self.root)
             else:
                 try:
-                    data = [self.firstname_box.get(),self.lastname_box.get(),self.email_box.get(),self.age_box.get(),self.con_pass_box.get()]
-                    con = connect("userdata.db")
+                    con = connect("UserData.db")
                     cursor = con.cursor()
-                    cursor.execute("""INSERT INTO user_data (first_name,last_name,email_id,age,password) VALUES (?,?,?,?,?,)""",data)
+                    sql = "INSERT INTO User_Data VALUES ('",str(self.firstname_box.get()),"','",str(self.lastname_box.get()),"','",str(self.email_box.get()),"','",int(self.age_box.get()),"','",str(self.pass_box.get()),"')"
+                    cursor.execute(sql)
                     con.commit()
                     con.close()
                     messagebox.showinfo("Successfull", "Thank you!!! for signup", parent=self.root)
                 except Exception as es:
                     messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
-                messagebox.showinfo("Successfull","Thank you!!! for signup", parent=self.root)
+                #messagebox.showinfo("Successfull","Thank you!!! for signup", parent=self.root)
             #print(self.firstname_box.get(),self.lastname_box.get())
             #print(self.email_box.get())
             #print(self.age_box.get())
