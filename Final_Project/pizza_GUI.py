@@ -1,6 +1,6 @@
 from tkinter import *
 from PIL import ImageTk, Image
-
+from Final_Project.voice_system import voice_pizza
 def call_pizzamenu():
     root = Toplevel()
 
@@ -184,5 +184,5 @@ def call_pizzamenu():
 
     bottom_Root.pack(side=BOTTOM, fill=BOTH, expand=1)
     copyRight.pack()
-
+    voice_pizza.wishme()
     mainloop()

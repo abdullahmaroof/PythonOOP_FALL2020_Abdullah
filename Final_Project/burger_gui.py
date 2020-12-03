@@ -1,5 +1,6 @@
 from tkinter import *
 from PIL import ImageTk, Image
+from Final_Project.voice_system import voice_burger
 
 def call_burgermenu():
     root = Toplevel()
@@ -185,5 +186,5 @@ def call_burgermenu():
 
     bottom_Root.pack(side=BOTTOM, fill=BOTH, expand=1)
     copyRight.pack()
-
+    voice_burger.wishme()
     mainloop()

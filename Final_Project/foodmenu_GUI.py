@@ -4,6 +4,7 @@ from Final_Project.biryani_GUI import call_biryanimenu
 from tkinter import *
 from PIL import ImageTk, Image
 from Final_Project.burger_gui import call_burgermenu
+from Final_Project.voice_system import voice_menu
 
 def call_menu():
     root = Toplevel()
@@ -95,5 +96,5 @@ def call_menu():
 
     bottom_Root.pack(side=BOTTOM, fill=BOTH, expand=1)
     copyRight.pack(pady=10)
-
+    voice_menu.wishme()
     mainloop()
