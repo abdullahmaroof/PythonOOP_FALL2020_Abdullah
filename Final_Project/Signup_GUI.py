@@ -3,6 +3,8 @@ from PIL import ImageTk, Image
 from Final_Project.login_GUI import signin
 from Final_Project.voice_system import voice_signup
 from tkinter import ttk, messagebox
+from sqlite3 import *
+con = connect("userdata.db")
 
 def call_signup():
     class gui_signup:
@@ -96,7 +98,19 @@ def call_signup():
             if self.firstname_box.get() == "" or self.lastname_box.get() == "" or self.email_box.get() == "" or self.age_box.get() == "Select Age" or self.pass_box.get() == "" or self.con_pass_box.get() == "":
                 messagebox.showerror("ERROR","Please fill all fields", parent=self.root)
             elif self.pass_box.get() != self.con_pass_box.get():
-                messagebox.showerror("Password","Please enter same password in confirm password")
+                messagebox.showerror("Password","Please enter same password in confirm password", parent=self.root)
+            else:
+                try:
+                    data = [self.firstname_box.get(),self.lastname_box.get(),self.email_box.get(),self.age_box.get(),self.con_pass_box.get()]
+                    con = connect("userdata.db")
+                    cursor = con.cursor()
+                    cursor.execute("""INSERT INTO user_data (first_name,last_name,email_id,age,password) VALUES (?,?,?,?,?,)""",data)
+                    con.commit()
+                    con.close()
+                    messagebox.showinfo("Successfull", "Thank you!!! for signup", parent=self.root)
+                except Exception as es:
+                    messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
+                messagebox.showinfo("Successfull","Thank you!!! for signup", parent=self.root)
             #print(self.firstname_box.get(),self.lastname_box.get())
             #print(self.email_box.get())
             #print(self.age_box.get())
