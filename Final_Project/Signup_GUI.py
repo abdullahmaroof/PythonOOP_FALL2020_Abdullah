@@ -4,7 +4,7 @@ from Final_Project.login_GUI import signin
 from Final_Project.voice_system import voice_signup
 from tkinter import ttk, messagebox
 from sqlite3 import *
-from Final_Project.signup_database import *
+
 
 def call_signup():
     class gui_signup:
@@ -101,9 +101,9 @@ def call_signup():
                 messagebox.showerror("Password","Please enter same password in confirm password", parent=self.root)
             else:
                 try:
-                    con = connect("UserData.db")
+                    con = connect("UserInfo.db")
                     cursor = con.cursor()
-                    sql = "INSERT INTO User_Data VALUES ('",str(self.firstname_box.get()),"','",str(self.lastname_box.get()),"','",str(self.email_box.get()),"','",int(self.age_box.get()),"','",str(self.pass_box.get()),"')"
+                    sql = "INSERT INTO UserData VALUES ('"+self.firstname_box.get()+"','"+self.lastname_box.get()+"','"+self.email_box.get()+"','"+self.age_box.get()+"','"+self.pass_box.get()+"')"
                     cursor.execute(sql)
                     con.commit()
                     con.close()
