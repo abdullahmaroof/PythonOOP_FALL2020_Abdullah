@@ -94,6 +94,15 @@ def call_signup():
 
             bottom_Root.pack(side=BOTTOM, fill=BOTH, expand=1)
             copyRight.pack(pady=10)
+
+        def clear(self):
+            self.firstname_box.delete(0,END)
+            self.lastname_box.delete(0,END)
+            self.email_box.delete(0,END)
+            self.age_box.delete(0,END)
+            self.pass_box.delete(0,END)
+            self.con_pass_box.delete(0,END)
+
         def enter_value(self):
             if self.firstname_box.get() == "" or self.lastname_box.get() == "" or self.email_box.get() == "" or self.age_box.get() == "Select Age" or self.pass_box.get() == "" or self.con_pass_box.get() == "":
                 messagebox.showerror("ERROR","Please fill all fields", parent=self.root)
@@ -103,24 +112,15 @@ def call_signup():
                 try:
                     con = connect("UserInfo.db")
                     cursor = con.cursor()
-                    sql = "SELECT * FROM UserData where email="+self.email_box.get()+""
-                    row = cursor.fetchall()
-                    if row != None:
-                        messagebox.showerror("ERROR", "This user is already exist", parent=self.root)
-                    else:
-                        sql = "INSERT INTO UserData VALUES ('"+self.firstname_box.get()+"','"+self.lastname_box.get()+"','"+self.email_box.get()+"','"+self.age_box.get()+"','"+self.pass_box.get()+"')"
-                        cursor.execute(sql)
-                        con.commit()
-                        con.close()
-                        messagebox.showinfo("Successfull", "Thank you!!! for signup", parent=self.root)
+                    sql = "INSERT INTO UserData VALUES ('"+self.firstname_box.get()+"','"+self.lastname_box.get()+"','"+self.email_box.get()+"','"+self.age_box.get()+"','"+self.pass_box.get()+"')"
+                    cursor.execute(sql)
+                    con.commit()
+                    con.close()
+                    messagebox.showinfo("Successfull", "Thank you!!! for signup", parent=self.root)
+                    self.clear()
+                    signin()
                 except Exception as es:
                     messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
-                #messagebox.showinfo("Successfull","Thank you!!! for signup", parent=self.root)
-            #print(self.firstname_box.get(),self.lastname_box.get())
-            #print(self.email_box.get())
-            #print(self.age_box.get())
-            #print(self.pass_box.get())
-            #print(self.con_pass_box.get())
 
     root = Toplevel()
     obj = gui_signup(root)
