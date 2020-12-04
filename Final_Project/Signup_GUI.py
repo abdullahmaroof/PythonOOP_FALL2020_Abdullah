@@ -103,11 +103,16 @@ def call_signup():
                 try:
                     con = connect("UserInfo.db")
                     cursor = con.cursor()
-                    sql = "INSERT INTO UserData VALUES ('"+self.firstname_box.get()+"','"+self.lastname_box.get()+"','"+self.email_box.get()+"','"+self.age_box.get()+"','"+self.pass_box.get()+"')"
-                    cursor.execute(sql)
-                    con.commit()
-                    con.close()
-                    messagebox.showinfo("Successfull", "Thank you!!! for signup", parent=self.root)
+                    sql = "SELECT * FROM UserData where email="+self.email_box.get()+""
+                    row = cursor.fetchall()
+                    if row != None:
+                        messagebox.showerror("ERROR", "This user is already exist", parent=self.root)
+                    else:
+                        sql = "INSERT INTO UserData VALUES ('"+self.firstname_box.get()+"','"+self.lastname_box.get()+"','"+self.email_box.get()+"','"+self.age_box.get()+"','"+self.pass_box.get()+"')"
+                        cursor.execute(sql)
+                        con.commit()
+                        con.close()
+                        messagebox.showinfo("Successfull", "Thank you!!! for signup", parent=self.root)
                 except Exception as es:
                     messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
                 #messagebox.showinfo("Successfull","Thank you!!! for signup", parent=self.root)
