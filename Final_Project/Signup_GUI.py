@@ -103,7 +103,23 @@ def call_signup():
             self.pass_box.delete(0,END)
             self.con_pass_box.delete(0,END)
 
+        def data_file(self):
+            file = open("user_data.txt","a")
+            file.write("First Name: "+ self.firstname_box.get())
+            file.write("\n")
+            file.write("Second Name: "+ self.lastname_box.get())
+            file.write("\n")
+            file.write("Email id: "+ self.email_box.get())
+            file.write("\n")
+            file.write("Age: "+ self.age_box.get())
+            file.write("\n")
+            file.write("Password: "+ self.pass_box.get())
+            file.write("\n")
+            file.close()
+
+
         def enter_value(self):
+            self.data_file()
             if self.firstname_box.get() == "" or self.lastname_box.get() == "" or self.email_box.get() == "" or self.age_box.get() == "Select Age" or self.pass_box.get() == "" or self.con_pass_box.get() == "":
                 messagebox.showerror("ERROR","Please fill all fields", parent=self.root)
             elif self.pass_box.get() != self.con_pass_box.get():
