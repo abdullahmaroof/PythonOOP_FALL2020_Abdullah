@@ -18,3 +18,8 @@ Second Name: sdad
 Email id: 213e312
 Age: 37
 Password: 1234
+First Name: ammad
+Second Name: anwar
+Email id: ammad@gmail.com
+Age: 27
+Password: 12345
