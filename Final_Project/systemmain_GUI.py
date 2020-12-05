@@ -2,6 +2,7 @@ from tkinter import *
 from PIL import ImageTk, Image
 from Final_Project.foodmenu_GUI import call_menu
 from Final_Project.voice_system import voice_system
+from Final_Project.aboutus_gui import call_aboutus
 
 def call_system():
     root = Toplevel()
@@ -30,7 +31,7 @@ def call_system():
     left_bottom_cenroot = Frame(bottom_center, bg="", height=80)
     info_but = Button(left_bottom_cenroot, text="Personal Info", width=25, height=2, bg="light blue", font=('arial',10,'bold'), activebackground="black", activeforeground="white")
     right_bottom_cenroot = Frame(bottom_center, bg="gray92", height=80)
-    aboutus_but = Button(right_bottom_cenroot, text="About us", width=25, height=2, bg="light blue", font=('arial',10,'bold'), activebackground="black", activeforeground="white")
+    aboutus_but = Button(right_bottom_cenroot, text="About us", command= lambda : call_aboutus(), width=25, height=2, bg="light blue", font=('arial',10,'bold'), activebackground="black", activeforeground="white")
     last_center = Frame(center_Root, bg="gray92", height=80)
     orderfood_but = Button(last_center, text="Order Food", command= lambda : call_menu(), width=25, height=2, bg="light blue", font=('arial',10,'bold'), activebackground="black", activeforeground="white")
 

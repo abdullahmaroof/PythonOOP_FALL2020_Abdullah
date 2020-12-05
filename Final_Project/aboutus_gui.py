@@ -62,4 +62,3 @@ def call_aboutus():
     voice_aboutus.wishme()
     mainloop()
 
-x = call_aboutus()
