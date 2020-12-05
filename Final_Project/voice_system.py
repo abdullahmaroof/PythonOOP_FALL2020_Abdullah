@@ -108,3 +108,9 @@ class voice_aboutZUBAIR(call_voice):
         speak("Program: B S Artificial Intelligence")
         speak("Department: Software Engineering")
         speak("Student of Superior University, gold campus")
+
+class voice_bill(call_voice):
+    @staticmethod
+    def wishme():
+        speak("Sir, this is your bill. Your order will serve you in 20 minutes!!!")
+

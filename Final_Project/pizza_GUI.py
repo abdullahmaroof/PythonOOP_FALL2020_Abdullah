@@ -1,6 +1,8 @@
 from tkinter import *
 from PIL import ImageTk, Image
 from Final_Project.voice_system import voice_pizza
+from Final_Project.Bill_GUI import call_bill
+
 def call_pizzamenu():
     root = Toplevel()
 
@@ -46,7 +48,7 @@ def call_pizzamenu():
     chfname_frame = Frame(chfajita_frame, bg="white", height=30)
     chfname_label = Label(chfname_frame, text="Chicken Fajita", font=('arial',12,'bold'), bg="white")
     chfsmall_frame = Frame(chfajita_frame, bg="white", height=30)
-    chfsmall_btn = Button(chfsmall_frame,  text="300 RS", width=15, bg="light blue", font=('arial',10,'bold'), activebackground="black", activeforeground="white")
+    chfsmall_btn = Button(chfsmall_frame,  text="300 RS", command = lambda : call_bill(), width=15, bg="light blue", font=('arial',10,'bold'), activebackground="black", activeforeground="white")
     chfmedium_frame = Frame(chfajita_frame, bg="white", height=30)
     chfmedium_btn = Button(chfmedium_frame,  text="500 RS", width=15, bg="light blue", font=('arial',10,'bold'), activebackground="black", activeforeground="white")
     chflarge_frame = Frame(chfajita_frame, bg="white", height=30)

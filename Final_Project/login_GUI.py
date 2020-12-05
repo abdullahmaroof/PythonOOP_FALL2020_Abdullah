@@ -78,10 +78,10 @@ def signin():
                 cursor = con.cursor()
                 sql = "SELECT * FROM UserData WHERE firstname = ? AND password = ?"
                 cursor.execute(sql,[(self.name_box.get()),(self.pass_box.get())])
-                data = cursor.fetchall()
+                self.data = cursor.fetchall()
                 con.commit()
                 con.close()
-                if data:
+                if self.data:
                     messagebox.showinfo("Successful!!","You are login "+self.name_box.get(), parent=self.root)
                     self.clear()
                     call_system()
@@ -94,3 +94,8 @@ def signin():
     obj = get_signin(root)
     call_login.wishme()
     mainloop()
+
+
+
+
+

@@ -23,3 +23,13 @@ Second Name: anwar
 Email id: ammad@gmail.com
 Age: 27
 Password: 12345
+First Name: noor
+Second Name: anwar
+Email id: 
+Age: 20
+Password: 1234
+First Name: noor
+Second Name: anwar
+Email id: noor@gmail.com
+Age: 20
+Password: 1234
