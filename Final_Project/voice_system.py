@@ -71,4 +71,4 @@ class voice_admin(call_voice):
     @staticmethod
     def wishme():
         speak("Sir, How are you!!!")
-        speak("Sir, you can get reports of users and bills")
+        speak("Sir, you can get reports of users, bills and menu")

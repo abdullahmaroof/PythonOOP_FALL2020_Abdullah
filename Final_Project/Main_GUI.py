@@ -10,7 +10,7 @@ from Final_Project.voice_system import call_voice
 class main_system:
     def __init__(self, root):
         self.root = root
-        root.state('zoomed')
+        root.geometry("800x470")
         root.title('Online Food Order System')
         root.iconbitmap(r'buy_online_5Wq_icon.ico')
         call_voice.wishme()
@@ -53,7 +53,7 @@ class main_system:
         copyRight = Label(bottom_Root, text=" © Copy Rights Reserved, Abdullah Maroof & Zubair Ali 2020", bg="light blue", font=('arial',12,'bold'))
 
         bottom_Root.pack(side=BOTTOM, fill=BOTH, expand=1)
-        copyRight.pack()
+        copyRight.pack(pady=10)
 
 root = Tk()
 obj = main_system(root)
