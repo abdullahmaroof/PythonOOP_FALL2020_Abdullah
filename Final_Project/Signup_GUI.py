@@ -10,7 +10,7 @@ def call_signup():
     class gui_signup:
         def __init__(self, root):
             self.root = root
-            root.state('zoomed')
+            root.geometry("800x700")
             root.title('Online Food Order System')
             root.iconbitmap(r'buy_online_5Wq_icon.ico')
             #*****************upper block*****************************
