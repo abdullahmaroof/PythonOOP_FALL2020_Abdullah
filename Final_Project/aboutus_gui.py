@@ -3,7 +3,7 @@ from PIL import ImageTk, Image
 from Final_Project.voice_system import voice_aboutus, voice_aboutabdullah, voice_aboutZUBAIR
 
 def call_aboutus():
-    root = Tk()
+    root = Toplevel()
 
 
     root.geometry("800x730")
