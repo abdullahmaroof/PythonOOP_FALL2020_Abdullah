@@ -8,7 +8,7 @@ cursor = con.cursor()
 cursor.execute(sql)
 x = cursor.fetchall()
 
-def excelReportGeneration(x):
+def excelMENUReportGeneration():
     currentDataAndTime = datetime.datetime.now()
     dateAndTime = currentDataAndTime.strftime("%Y.%m.%d-%H.%M.%S")
     excelfileName = "menu-report-" + str(dateAndTime) + ".xlsx"
@@ -24,5 +24,3 @@ def excelReportGeneration(x):
         row = row + 1
         column = 0
     myWorkbook.close()
-
-
