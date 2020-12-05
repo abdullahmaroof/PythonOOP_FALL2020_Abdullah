@@ -21,6 +21,7 @@ class call_voice:
           speak('Good Evening!')
         speak('Welcome to our food order system')
 
+
 class call_login(call_voice):
     @staticmethod
     def wishme():
@@ -67,8 +68,43 @@ class voice_paratharoll(call_voice):
     @staticmethod
     def wishme():
         speak("Sir, here you go with different paratha roll tastes. Place your order")
+
 class voice_admin(call_voice):
     @staticmethod
     def wishme():
-        speak("Sir, How are you!!!")
-        speak("Sir, you can get reports of users, bills and menu")
+        hour = int(datetime.datetime.now().hour)
+        if hour >= 0 and hour < 12:
+            speak('Boss,Good Morning!')
+        elif hour >= 12 and hour < 18:
+            speak('Boss,Good Afternoon!')
+        else:
+            speak('Boss,Good Evening!')
+        speak("Boss, How are you!!!")
+        speak("Boss, you can get reports of users, bills and menu")
+
+class voice_aboutus(call_voice):
+    @staticmethod
+    def wishme():
+        speak("Sir, you can see about our team!!!")
+
+class voice_aboutabdullah(call_voice):
+    @staticmethod
+    def wishme():
+        speak("Sir, This is our boss!!!")
+        speak("Name: Abdullah Maroof")
+        speak("Rollnumber: B A I M - F 19- 007")
+        speak("section: 2 A")
+        speak("Program: B S Artificial Intelligence")
+        speak("Department: Software Engineering")
+        speak("Student of Superior University, gold campus")
+
+class voice_aboutZUBAIR(call_voice):
+    @staticmethod
+    def wishme():
+        speak("Sir, This is our co boss!!!")
+        speak("Name: Zubair Ali")
+        speak("Rollnumber: B A I M - S 20- 009")
+        speak("section: 2 A")
+        speak("Program: B S Artificial Intelligence")
+        speak("Department: Software Engineering")
+        speak("Student of Superior University, gold campus")
