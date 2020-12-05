@@ -67,3 +67,8 @@ class voice_paratharoll(call_voice):
     @staticmethod
     def wishme():
         speak("Sir, here you go with different paratha roll tastes. Place your order")
+class voice_admin(call_voice):
+    @staticmethod
+    def wishme():
+        speak("Sir, How are you!!!")
+        speak("Sir, you can get reports of users and bills")
