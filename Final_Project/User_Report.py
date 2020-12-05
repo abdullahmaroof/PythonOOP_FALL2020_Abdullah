@@ -8,7 +8,7 @@ cursor = con.cursor()
 cursor.execute(sql)
 x = cursor.fetchall()
 
-def excelMENUReportGeneration():
+def excelUSERReportGeneration():
     currentDataAndTime = datetime.datetime.now()
     dateAndTime = currentDataAndTime.strftime("%Y.%m.%d-%H.%M.%S")
     excelfileName = "user-report-" + str(dateAndTime) + ".xlsx"
