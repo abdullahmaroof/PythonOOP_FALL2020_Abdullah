@@ -1,6 +1,7 @@
 from tkinter import *
 from PIL import ImageTk, Image
 from Final_Project.voice_system import voice_admin
+from Final_Project.
 
 
 def call_adminsys():
