@@ -3,6 +3,7 @@ from PIL import ImageTk, Image
 from Final_Project.voice_system import voice_admin
 from Final_Project.Menu_Report import excelMENUReportGeneration
 from Final_Project.User_Report import excelUSERReportGeneration
+from Final_Project.Bill_report import excelbillReportGeneration
 
 
 def call_adminsys():
@@ -32,7 +33,7 @@ def call_adminsys():
             left_bottom_cenroot = Frame(bottom_center, bg="", height=80)
             info_but = Button(left_bottom_cenroot, text="Users Data", command= lambda : excelUSERReportGeneration(), width=25, height=2, bg="light blue", font=('arial',10,'bold'), activebackground="black", activeforeground="white")
             right_bottom_cenroot = Frame(bottom_center, bg="gray92", height=80)
-            aboutus_but = Button(right_bottom_cenroot, text="Bills Data", width=25, height=2, bg="light blue", font=('arial',10,'bold'), activebackground="black", activeforeground="white")
+            aboutus_but = Button(right_bottom_cenroot, text="Bills Data", command= lambda : excelbillReportGeneration(), width=25, height=2, bg="light blue", font=('arial',10,'bold'), activebackground="black", activeforeground="white")
             last_center = Frame(center_Root, bg="gray92", height=80)
             orderfood_but = Button(last_center, text="Menu Data", command= lambda : excelMENUReportGeneration(), width=25, height=2, bg="light blue", font=('arial',10,'bold'), activebackground="black", activeforeground="white")
 

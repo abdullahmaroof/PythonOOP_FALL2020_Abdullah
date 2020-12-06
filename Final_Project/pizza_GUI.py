@@ -545,4 +545,3 @@ def call_pizzamenu():
     voice_pizza.wishme()
     mainloop()
 
-obj = call_pizzamenu()
