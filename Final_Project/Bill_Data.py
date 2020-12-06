@@ -4,6 +4,8 @@ class for_bill:
     rand_value = randint(1000, 4000)
     food = ""
     flavour = ""
+    size = ""
+    servewith = ""
     price = ""
     note = ""
 
@@ -127,4 +129,266 @@ class lpizza_bbq(for_bill):
     flavour = "Bar BQ"
     size = "Large 13\""
     price = 1000
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+class burger_zinger(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Burger"
+    flavour = "Zinger"
+    servewith = "none"
+    price = 400
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+class dburger_zinger(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Burger"
+    flavour = "Zinger"
+    servewith = "Drink"
+    price = 500
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+class fburger_zinger(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Burger"
+    flavour = "Zinger"
+    servewith = "Fries"
+    price = 600
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class burger_beef(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Burger"
+    flavour = "Beef"
+    servewith = "none"
+    price = 500
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class dburger_beef(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Burger"
+    flavour = "Beef"
+    servewith = "Drink"
+    price = 600
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class fburger_beef(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Burger"
+    flavour = "Beef"
+    servewith = "Fries"
+    price = 700
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class burger_chicken(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Burger"
+    flavour = "Chicken"
+    servewith = "none"
+    price = 450
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class dburger_chicken(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Burger"
+    flavour = "Chicken"
+    servewith = "Drink"
+    price = 550
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class fburger_chicken(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Burger"
+    flavour = "Chicken"
+    servewith = "Fries"
+    price = 650
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class burger_shotgun(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Burger"
+    flavour = "Shotgun"
+    servewith = "none"
+    price = 350
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class dburger_shotgun(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Burger"
+    flavour = "Shotgun"
+    servewith = "Drink"
+    price = 450
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class fburger_shotgun(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Burger"
+    flavour = "Shotgun"
+    servewith = "Fries"
+    price = 550
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+class burger_bbq(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Burger"
+    flavour = "Bar BQ"
+    servewith = "none"
+    price = 500
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class dburger_bbq(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Burger"
+    flavour = "Bar BQ"
+    servewith = "Drink"
+    price = 600
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class fburger_bbq(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Burger"
+    flavour = "Bar BQ"
+    servewith = "Fries"
+    price = 700
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+class parroll_zinger(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Paratha Roll"
+    flavour = "Zinger"
+    servewith = "none"
+    price = 500
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+class dparroll_zinger(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Paratha Roll"
+    flavour = "Zinger"
+    servewith = "Drink"
+    price = 550
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+class fparroll_zinger(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Paratha Roll"
+    flavour = "Zinger"
+    servewith = "Fries"
+    price = 600
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class parroll_beef(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Paratha Roll"
+    flavour = "Beef"
+    servewith = "none"
+    price = 600
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class dparroll_beef(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Paratha Roll"
+    flavour = "Beef"
+    servewith = "Drink"
+    price = 650
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class fparroll_beef(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Paratha Roll"
+    flavour = "Beef"
+    servewith = "Fries"
+    price = 700
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class parroll_chicken(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Paratha Roll"
+    flavour = "Chicken"
+    servewith = "none"
+    price = 450
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class dparroll_chicken(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Paratha Roll"
+    flavour = "Chicken"
+    servewith = "Drink"
+    price = 500
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class fparroll_chicken(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Paratha Roll"
+    flavour = "Chicken"
+    servewith = "Fries"
+    price = 550
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class parroll_smoke(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Paratha Roll"
+    flavour = "Smoke"
+    servewith = "none"
+    price = 600
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class dparroll_smoke(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Paratha Roll"
+    flavour = "Smoke"
+    servewith = "Drink"
+    price = 650
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class fparroll_smoke(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Paratha Roll"
+    flavour = "Smoke"
+    servewith = "Fries"
+    price = 700
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+class parroll_bbq(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Paratha Roll"
+    flavour = "Bar BQ"
+    servewith = "none"
+    price = 500
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class dparroll_bbq(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Paratha Roll"
+    flavour = "Bar BQ"
+    servewith = "Drink"
+    price = 600
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class fparroll_bbq(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Paratha Roll"
+    flavour = "Bar BQ"
+    servewith = "Fries"
+    price = 700
     note = "Your order will be serve in 20 min. Thank you!!!"
