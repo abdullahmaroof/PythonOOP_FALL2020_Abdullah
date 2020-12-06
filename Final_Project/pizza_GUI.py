@@ -196,11 +196,12 @@ def call_pizzamenu():
             self.billno = self.data.rand_value
             self.food = self.data.food
             self.flavour = self.data.flavour
+            self.size = self.data.size
             self.price = self.data.price
             self.message = self.data.note
             voice_bill.wishme()
             messagebox.showinfo("Order", "\t\tBill # " + str(
-                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Price " + str(
+                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
                 self.price) + "\n  " + self.message, parent=self.root)
 
         def medium_pizzachf(self):
@@ -208,11 +209,12 @@ def call_pizzamenu():
             self.billno = self.data.rand_value
             self.food = self.data.food
             self.flavour = self.data.flavour
+            self.size = self.data.size
             self.price = self.data.price
             self.message = self.data.note
             voice_bill.wishme()
             messagebox.showinfo("Order", "\t\tBill # " + str(
-                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Price " + str(
+                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
                 self.price) + "\n  " + self.message, parent=self.root)
 
         def large_pizzachf(self):
@@ -220,11 +222,12 @@ def call_pizzamenu():
             self.billno = self.data.rand_value
             self.food = self.data.food
             self.flavour = self.data.flavour
+            self.size = self.data.size
             self.price = self.data.price
             self.message = self.data.note
             voice_bill.wishme()
             messagebox.showinfo("Order", "\t\tBill # " + str(
-                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Price " + str(
+                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
                 self.price) + "\n  " + self.message, parent=self.root)
 
         def small_pizzapeeri(self):
@@ -232,11 +235,12 @@ def call_pizzamenu():
             self.billno = self.data.rand_value
             self.food = self.data.food
             self.flavour = self.data.flavour
+            self.size = self.data.size
             self.price = self.data.price
             self.message = self.data.note
             voice_bill.wishme()
             messagebox.showinfo("Order", "\t\tBill # " + str(
-                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Price " + str(
+                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
                 self.price) + "\n  " + self.message, parent=self.root)
 
         def medium_pizzapeeri(self):
@@ -244,11 +248,12 @@ def call_pizzamenu():
             self.billno = self.data.rand_value
             self.food = self.data.food
             self.flavour = self.data.flavour
+            self.size = self.data.size
             self.price = self.data.price
             self.message = self.data.note
             voice_bill.wishme()
             messagebox.showinfo("Order", "\t\tBill # " + str(
-                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Price " + str(
+                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
                 self.price) + "\n  " + self.message, parent=self.root)
 
         def large_pizzapeeri(self):
@@ -260,7 +265,7 @@ def call_pizzamenu():
             self.message = self.data.note
             voice_bill.wishme()
             messagebox.showinfo("Order", "\t\tBill # " + str(
-                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Price " + str(
+                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
                 self.price) + "\n  " + self.message, parent=self.root)
 
 
@@ -269,11 +274,12 @@ def call_pizzamenu():
             self.billno = self.data.rand_value
             self.food = self.data.food
             self.flavour = self.data.flavour
+            self.size = self.data.size
             self.price = self.data.price
             self.message = self.data.note
             voice_bill.wishme()
             messagebox.showinfo("Order", "\t\tBill # " + str(
-                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Price " + str(
+                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
                 self.price) + "\n  " + self.message, parent=self.root)
 
         def medium_pizzam(self):
@@ -281,11 +287,12 @@ def call_pizzamenu():
             self.billno = self.data.rand_value
             self.food = self.data.food
             self.flavour = self.data.flavour
+            self.size = self.data.size
             self.price = self.data.price
             self.message = self.data.note
             voice_bill.wishme()
             messagebox.showinfo("Order", "\t\tBill # " + str(
-                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Price " + str(
+                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
                 self.price) + "\n  " + self.message, parent=self.root)
 
         def large_pizzam(self):
@@ -293,11 +300,12 @@ def call_pizzamenu():
             self.billno = self.data.rand_value
             self.food = self.data.food
             self.flavour = self.data.flavour
+            self.size = self.data.size
             self.price = self.data.price
             self.message = self.data.note
             voice_bill.wishme()
             messagebox.showinfo("Order", "\t\tBill # " + str(
-                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Price " + str(
+                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
                 self.price) + "\n  " + self.message, parent=self.root)
 
         def small_pizzach(self):
@@ -305,11 +313,12 @@ def call_pizzamenu():
             self.billno = self.data.rand_value
             self.food = self.data.food
             self.flavour = self.data.flavour
+            self.size = self.data.size
             self.price = self.data.price
             self.message = self.data.note
             voice_bill.wishme()
             messagebox.showinfo("Order", "\t\tBill # " + str(
-                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Price " + str(
+                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
                 self.price) + "\n  " + self.message, parent=self.root)
 
         def medium_pizzach(self):
@@ -317,11 +326,12 @@ def call_pizzamenu():
             self.billno = self.data.rand_value
             self.food = self.data.food
             self.flavour = self.data.flavour
+            self.size = self.data.size
             self.price = self.data.price
             self.message = self.data.note
             voice_bill.wishme()
             messagebox.showinfo("Order", "\t\tBill # " + str(
-                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Price " + str(
+                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
                 self.price) + "\n  " + self.message, parent=self.root)
 
         def large_pizzach(self):
@@ -329,11 +339,12 @@ def call_pizzamenu():
             self.billno = self.data.rand_value
             self.food = self.data.food
             self.flavour = self.data.flavour
+            self.size = self.data.size
             self.price = self.data.price
             self.message = self.data.note
             voice_bill.wishme()
             messagebox.showinfo("Order", "\t\tBill # " + str(
-                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Price " + str(
+                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
                 self.price) + "\n  " + self.message, parent=self.root)
 
         def small_pizzabbq(self):
@@ -341,11 +352,12 @@ def call_pizzamenu():
             self.billno = self.data.rand_value
             self.food = self.data.food
             self.flavour = self.data.flavour
+            self.size = self.data.size
             self.price = self.data.price
             self.message = self.data.note
             voice_bill.wishme()
             messagebox.showinfo("Order", "\t\tBill # " + str(
-                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Price " + str(
+                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
                 self.price) + "\n  " + self.message, parent=self.root)
 
         def medium_pizzabbq(self):
@@ -353,11 +365,12 @@ def call_pizzamenu():
             self.billno = self.data.rand_value
             self.food = self.data.food
             self.flavour = self.data.flavour
+            self.size = self.data.size
             self.price = self.data.price
             self.message = self.data.note
             voice_bill.wishme()
             messagebox.showinfo("Order", "\t\tBill # " + str(
-                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Price " + str(
+                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
                 self.price) + "\n  " + self.message, parent=self.root)
 
         def large_pizzabbq(self):
@@ -365,11 +378,12 @@ def call_pizzamenu():
             self.billno = self.data.rand_value
             self.food = self.data.food
             self.flavour = self.data.flavour
+            self.size = self.data.size
             self.price = self.data.price
             self.message = self.data.note
             voice_bill.wishme()
             messagebox.showinfo("Order", "\t\tBill # " + str(
-                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Price " + str(
+                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
                 self.price) + "\n  " + self.message, parent=self.root)
 
 
