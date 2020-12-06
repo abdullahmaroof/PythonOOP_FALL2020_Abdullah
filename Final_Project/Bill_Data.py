@@ -392,3 +392,134 @@ class fparroll_bbq(for_bill):
     servewith = "Fries"
     price = 700
     note = "Your order will be serve in 20 min. Thank you!!!"
+
+class biryani_zinger(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Biryani"
+    flavour = "Zinger"
+    servewith = "none"
+    price = 300
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+class dbiryani_zinger(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Biryani"
+    flavour = "Zinger"
+    servewith = "Drink"
+    price = 350
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+class fbiryani_zinger(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Biryani"
+    flavour = "Zinger"
+    servewith = "Salt"
+    price = 400
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class biryani_beef(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Biryani"
+    flavour = "Beef"
+    servewith = "none"
+    price = 500
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class dbiryani_beef(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Biryani"
+    flavour = "Beef"
+    servewith = "Drink"
+    price = 550
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class fbiryani_beef(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Biryani"
+    flavour = "Beef"
+    servewith = "Salt"
+    price = 600
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class biryani_chicken(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Biryani"
+    flavour = "Chicken"
+    servewith = "none"
+    price = 250
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class dbiryani_chicken(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Biryani"
+    flavour = "Chicken"
+    servewith = "Drink"
+    price = 300
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class fbiryani_chicken(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Biryani"
+    flavour = "Chicken"
+    servewith = "Salt"
+    price = 350
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class biryani_Chrice(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Biryani"
+    flavour = "Chinese Rice"
+    servewith = "none"
+    price = 200
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class dbiryani_Chrice(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Biryani"
+    flavour = "Chinese Rice"
+    servewith = "Drink"
+    price = 250
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class fbiryani_Chrice(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Biryani"
+    flavour = "Chinese Rice"
+    servewith = "Salt"
+    price = 300
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+class biryani_bbq(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Biryani"
+    flavour = "Bar BQ"
+    servewith = "none"
+    price = 600
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class dbiryani_bbq(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Biryani"
+    flavour = "Bar BQ"
+    servewith = "Drink"
+    price = 650
+    note = "Your order will be serve in 20 min. Thank you!!!"
+
+
+class fbiryani_bbq(for_bill):
+    rand_value = randint(1000, 4000)
+    food = "Biryani"
+    flavour = "Bar BQ"
+    servewith = "Salt"
+    price = 700
+    note = "Your order will be serve in 20 min. Thank you!!!"
