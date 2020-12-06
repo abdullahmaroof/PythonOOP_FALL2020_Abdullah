@@ -29,10 +29,10 @@ def call_biryanimenu():
 
             #*********top-center*****
             top_center = Frame(center_Root, bg="gray92", height=100)
-            pic = Image.open("biryani.PNG")
-            resized = pic.resize((150, 100), Image.ANTIALIAS)
-            mypic = ImageTk.PhotoImage(resized)
-            image_top_center = Label(top_center, image = mypic)
+            self.pic = Image.open("biryani.PNG")
+            self.resized = self.pic.resize((150, 100), Image.ANTIALIAS)
+            self.mypic = ImageTk.PhotoImage(self.resized)
+            image_top_center = Label(top_center, image = self.mypic)
 
             #*********center-center pack*****
             center_center = Frame(root, bg="white", height=420)
@@ -190,7 +190,7 @@ def call_biryanimenu():
 
             #*****************bottom block*****************************
             bottom_Root = Frame(root, bg="light blue", height=50)
-            copyRight = Label(bottom_Root, text=" © Copy Rights Reserved, Abdullah Maroof 2020", bg="light blue", font=('arial',12,'bold'))
+            copyRight = Label(bottom_Root, text=" © Copy Rights Reserved, Abdullah Maroof & Zubair Ali 2020", bg="light blue", font=('arial',12,'bold'))
 
             bottom_Root.pack(side=BOTTOM, fill=BOTH, expand=1)
             copyRight.pack()
