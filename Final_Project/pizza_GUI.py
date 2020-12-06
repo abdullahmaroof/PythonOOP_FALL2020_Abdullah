@@ -391,5 +391,3 @@ def call_pizzamenu():
     obj = pizza_menu(root)
     voice_pizza.wishme()
     mainloop()
-
-x = call_pizzamenu()
