@@ -3,6 +3,7 @@ from PIL import ImageTk, Image
 from Final_Project.voice_system import voice_pizza, voice_bill
 from tkinter import messagebox
 from Final_Project.Bill_Data import *
+from sqlite3 import *
 
 def call_pizzamenu():
 
@@ -200,9 +201,20 @@ def call_pizzamenu():
             self.price = self.data.price
             self.message = self.data.note
             voice_bill.wishme()
-            messagebox.showinfo("Order", "\t\tBill # " + str(
-                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
-                self.price) + "\n  " + self.message, parent=self.root)
+            try:
+                con = connect("BillRecord.db")
+                cursor = con.cursor()
+                sql = "INSERT INTO bill VALUES ('" + str(
+                    self.billno) + "','" + self.food + "','" + self.flavour + "','" + self.size + "','" + str(
+                    self.price) + "')"
+                cursor.execute(sql)
+                con.commit()
+                con.close()
+                messagebox.showinfo("Order", "\t\tBill # " + str(
+                    self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
+                    self.price) + "\n  " + self.message, parent=self.root)
+            except Exception as es:
+                messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
         def medium_pizzachf(self):
             self.data = mpizza_chf
@@ -213,9 +225,18 @@ def call_pizzamenu():
             self.price = self.data.price
             self.message = self.data.note
             voice_bill.wishme()
-            messagebox.showinfo("Order", "\t\tBill # " + str(
-                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
-                self.price) + "\n  " + self.message, parent=self.root)
+            try:
+                con = connect("BillRecord.db")
+                cursor = con.cursor()
+                sql = "INSERT INTO bill VALUES ('" + str(self.billno) + "','" + self.food + "','" + self.flavour + "','" + self.size + "','" + str(self.price) + "')"
+                cursor.execute(sql)
+                con.commit()
+                con.close()
+                messagebox.showinfo("Order", "\t\tBill # " + str(
+                    self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
+                    self.price) + "\n  " + self.message, parent=self.root)
+            except Exception as es:
+                messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
         def large_pizzachf(self):
             self.data = lpizza_chf
@@ -226,9 +247,20 @@ def call_pizzamenu():
             self.price = self.data.price
             self.message = self.data.note
             voice_bill.wishme()
-            messagebox.showinfo("Order", "\t\tBill # " + str(
-                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
-                self.price) + "\n  " + self.message, parent=self.root)
+            try:
+                con = connect("BillRecord.db")
+                cursor = con.cursor()
+                sql = "INSERT INTO bill VALUES ('" + str(
+                    self.billno) + "','" + self.food + "','" + self.flavour + "','" + self.size + "','" + str(
+                    self.price) + "')"
+                cursor.execute(sql)
+                con.commit()
+                con.close()
+                messagebox.showinfo("Order", "\t\tBill # " + str(
+                    self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
+                    self.price) + "\n  " + self.message, parent=self.root)
+            except Exception as es:
+                messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
         def small_pizzapeeri(self):
             self.data = spizza_peeri
@@ -239,9 +271,20 @@ def call_pizzamenu():
             self.price = self.data.price
             self.message = self.data.note
             voice_bill.wishme()
-            messagebox.showinfo("Order", "\t\tBill # " + str(
-                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
-                self.price) + "\n  " + self.message, parent=self.root)
+            try:
+                con = connect("BillRecord.db")
+                cursor = con.cursor()
+                sql = "INSERT INTO bill VALUES ('" + str(
+                    self.billno) + "','" + self.food + "','" + self.flavour + "','" + self.size + "','" + str(
+                    self.price) + "')"
+                cursor.execute(sql)
+                con.commit()
+                con.close()
+                messagebox.showinfo("Order", "\t\tBill # " + str(
+                    self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
+                    self.price) + "\n  " + self.message, parent=self.root)
+            except Exception as es:
+                messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
         def medium_pizzapeeri(self):
             self.data = mpizza_peeri
@@ -252,9 +295,20 @@ def call_pizzamenu():
             self.price = self.data.price
             self.message = self.data.note
             voice_bill.wishme()
-            messagebox.showinfo("Order", "\t\tBill # " + str(
-                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
-                self.price) + "\n  " + self.message, parent=self.root)
+            try:
+                con = connect("BillRecord.db")
+                cursor = con.cursor()
+                sql = "INSERT INTO bill VALUES ('" + str(
+                    self.billno) + "','" + self.food + "','" + self.flavour + "','" + self.size + "','" + str(
+                    self.price) + "')"
+                cursor.execute(sql)
+                con.commit()
+                con.close()
+                messagebox.showinfo("Order", "\t\tBill # " + str(
+                    self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
+                    self.price) + "\n  " + self.message, parent=self.root)
+            except Exception as es:
+                messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
         def large_pizzapeeri(self):
             self.data = lpizza_peeri
@@ -264,9 +318,20 @@ def call_pizzamenu():
             self.price = self.data.price
             self.message = self.data.note
             voice_bill.wishme()
-            messagebox.showinfo("Order", "\t\tBill # " + str(
-                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
-                self.price) + "\n  " + self.message, parent=self.root)
+            try:
+                con = connect("BillRecord.db")
+                cursor = con.cursor()
+                sql = "INSERT INTO bill VALUES ('" + str(
+                    self.billno) + "','" + self.food + "','" + self.flavour + "','" + self.size + "','" + str(
+                    self.price) + "')"
+                cursor.execute(sql)
+                con.commit()
+                con.close()
+                messagebox.showinfo("Order", "\t\tBill # " + str(
+                    self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
+                    self.price) + "\n  " + self.message, parent=self.root)
+            except Exception as es:
+                messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
 
         def small_pizzam(self):
@@ -278,9 +343,20 @@ def call_pizzamenu():
             self.price = self.data.price
             self.message = self.data.note
             voice_bill.wishme()
-            messagebox.showinfo("Order", "\t\tBill # " + str(
-                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
-                self.price) + "\n  " + self.message, parent=self.root)
+            try:
+                con = connect("BillRecord.db")
+                cursor = con.cursor()
+                sql = "INSERT INTO bill VALUES ('" + str(
+                    self.billno) + "','" + self.food + "','" + self.flavour + "','" + self.size + "','" + str(
+                    self.price) + "')"
+                cursor.execute(sql)
+                con.commit()
+                con.close()
+                messagebox.showinfo("Order", "\t\tBill # " + str(
+                    self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
+                    self.price) + "\n  " + self.message, parent=self.root)
+            except Exception as es:
+                messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
         def medium_pizzam(self):
             self.data = mpizza_m
@@ -304,9 +380,20 @@ def call_pizzamenu():
             self.price = self.data.price
             self.message = self.data.note
             voice_bill.wishme()
-            messagebox.showinfo("Order", "\t\tBill # " + str(
-                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
-                self.price) + "\n  " + self.message, parent=self.root)
+            try:
+                con = connect("BillRecord.db")
+                cursor = con.cursor()
+                sql = "INSERT INTO bill VALUES ('" + str(
+                    self.billno) + "','" + self.food + "','" + self.flavour + "','" + self.size + "','" + str(
+                    self.price) + "')"
+                cursor.execute(sql)
+                con.commit()
+                con.close()
+                messagebox.showinfo("Order", "\t\tBill # " + str(
+                    self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
+                    self.price) + "\n  " + self.message, parent=self.root)
+            except Exception as es:
+                messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
         def small_pizzach(self):
             self.data = spizza_ch
@@ -317,9 +404,20 @@ def call_pizzamenu():
             self.price = self.data.price
             self.message = self.data.note
             voice_bill.wishme()
-            messagebox.showinfo("Order", "\t\tBill # " + str(
-                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
-                self.price) + "\n  " + self.message, parent=self.root)
+            try:
+                con = connect("BillRecord.db")
+                cursor = con.cursor()
+                sql = "INSERT INTO bill VALUES ('" + str(
+                    self.billno) + "','" + self.food + "','" + self.flavour + "','" + self.size + "','" + str(
+                    self.price) + "')"
+                cursor.execute(sql)
+                con.commit()
+                con.close()
+                messagebox.showinfo("Order", "\t\tBill # " + str(
+                    self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
+                    self.price) + "\n  " + self.message, parent=self.root)
+            except Exception as es:
+                messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
         def medium_pizzach(self):
             self.data = mpizza_ch
@@ -330,9 +428,20 @@ def call_pizzamenu():
             self.price = self.data.price
             self.message = self.data.note
             voice_bill.wishme()
-            messagebox.showinfo("Order", "\t\tBill # " + str(
-                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
-                self.price) + "\n  " + self.message, parent=self.root)
+            try:
+                con = connect("BillRecord.db")
+                cursor = con.cursor()
+                sql = "INSERT INTO bill VALUES ('" + str(
+                    self.billno) + "','" + self.food + "','" + self.flavour + "','" + self.size + "','" + str(
+                    self.price) + "')"
+                cursor.execute(sql)
+                con.commit()
+                con.close()
+                messagebox.showinfo("Order", "\t\tBill # " + str(
+                    self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
+                    self.price) + "\n  " + self.message, parent=self.root)
+            except Exception as es:
+                messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
         def large_pizzach(self):
             self.data = lpizza_ch
@@ -343,9 +452,20 @@ def call_pizzamenu():
             self.price = self.data.price
             self.message = self.data.note
             voice_bill.wishme()
-            messagebox.showinfo("Order", "\t\tBill # " + str(
-                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
-                self.price) + "\n  " + self.message, parent=self.root)
+            try:
+                con = connect("BillRecord.db")
+                cursor = con.cursor()
+                sql = "INSERT INTO bill VALUES ('" + str(
+                    self.billno) + "','" + self.food + "','" + self.flavour + "','" + self.size + "','" + str(
+                    self.price) + "')"
+                cursor.execute(sql)
+                con.commit()
+                con.close()
+                messagebox.showinfo("Order", "\t\tBill # " + str(
+                    self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
+                    self.price) + "\n  " + self.message, parent=self.root)
+            except Exception as es:
+                messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
         def small_pizzabbq(self):
             self.data = spizza_bbq
@@ -356,9 +476,20 @@ def call_pizzamenu():
             self.price = self.data.price
             self.message = self.data.note
             voice_bill.wishme()
-            messagebox.showinfo("Order", "\t\tBill # " + str(
-                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
-                self.price) + "\n  " + self.message, parent=self.root)
+            try:
+                con = connect("BillRecord.db")
+                cursor = con.cursor()
+                sql = "INSERT INTO bill VALUES ('" + str(
+                    self.billno) + "','" + self.food + "','" + self.flavour + "','" + self.size + "','" + str(
+                    self.price) + "')"
+                cursor.execute(sql)
+                con.commit()
+                con.close()
+                messagebox.showinfo("Order", "\t\tBill # " + str(
+                    self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
+                    self.price) + "\n  " + self.message, parent=self.root)
+            except Exception as es:
+                messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
         def medium_pizzabbq(self):
             self.data = mpizza_bbq
@@ -369,9 +500,20 @@ def call_pizzamenu():
             self.price = self.data.price
             self.message = self.data.note
             voice_bill.wishme()
-            messagebox.showinfo("Order", "\t\tBill # " + str(
-                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
-                self.price) + "\n  " + self.message, parent=self.root)
+            try:
+                con = connect("BillRecord.db")
+                cursor = con.cursor()
+                sql = "INSERT INTO bill VALUES ('" + str(
+                    self.billno) + "','" + self.food + "','" + self.flavour + "','" + self.size + "','" + str(
+                    self.price) + "')"
+                cursor.execute(sql)
+                con.commit()
+                con.close()
+                messagebox.showinfo("Order", "\t\tBill # " + str(
+                    self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
+                    self.price) + "\n  " + self.message, parent=self.root)
+            except Exception as es:
+                messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
         def large_pizzabbq(self):
             self.data = lpizza_bbq
@@ -382,12 +524,25 @@ def call_pizzamenu():
             self.price = self.data.price
             self.message = self.data.note
             voice_bill.wishme()
-            messagebox.showinfo("Order", "\t\tBill # " + str(
-                self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
-                self.price) + "\n  " + self.message, parent=self.root)
+            try:
+                con = connect("BillRecord.db")
+                cursor = con.cursor()
+                sql = "INSERT INTO bill VALUES ('" + str(
+                    self.billno) + "','" + self.food + "','" + self.flavour + "','" + self.size + "','" + str(
+                    self.price) + "')"
+                cursor.execute(sql)
+                con.commit()
+                con.close()
+                messagebox.showinfo("Order", "\t\tBill # " + str(
+                    self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Size: " + self.size + "\n  Price " + str(
+                    self.price) + "\n  " + self.message, parent=self.root)
+            except Exception as es:
+                messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
 
     root = Toplevel()
     obj = pizza_menu(root)
     voice_pizza.wishme()
     mainloop()
+
+obj = call_pizzamenu()
