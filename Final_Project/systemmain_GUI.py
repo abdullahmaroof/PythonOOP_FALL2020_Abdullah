@@ -8,7 +8,7 @@ def call_system():
     root = Toplevel()
 
 
-    root.geometry("800x520")
+    root.geometry("800x450")
     root.title('Online Food Order System')
     root.iconbitmap(r'buy_online_5Wq_icon.ico')
     #*****************upper block*****************************
@@ -29,12 +29,9 @@ def call_system():
     sub_title = Label(center_center, text="Welcome To System", bg="gray92", font=('arial',20,'underline','bold'))
     bottom_center = Frame(center_Root, bg="gray92", height=80)
     left_bottom_cenroot = Frame(bottom_center, bg="", height=80)
-    info_but = Button(left_bottom_cenroot, text="Personal Info", width=25, height=2, bg="light blue", font=('arial',10,'bold'), activebackground="black", activeforeground="white")
+    info_but = Button(left_bottom_cenroot, text="Order Food", command= lambda : call_menu(), width=25, height=2, bg="light blue", font=('arial',10,'bold'), activebackground="black", activeforeground="white")
     right_bottom_cenroot = Frame(bottom_center, bg="gray92", height=80)
     aboutus_but = Button(right_bottom_cenroot, text="About us", command= lambda : call_aboutus(), width=25, height=2, bg="light blue", font=('arial',10,'bold'), activebackground="black", activeforeground="white")
-    last_center = Frame(center_Root, bg="gray92", height=80)
-    orderfood_but = Button(last_center, text="Order Food", command= lambda : call_menu(), width=25, height=2, bg="light blue", font=('arial',10,'bold'), activebackground="black", activeforeground="white")
-
 
     center_Root.pack(side=TOP, fill=BOTH, expand=1)
     top_center.pack(side=TOP, fill=BOTH, expand=1)
@@ -46,8 +43,6 @@ def call_system():
     info_but.pack(pady=20)
     right_bottom_cenroot.pack(side=LEFT, fill=BOTH, expand=1)
     aboutus_but.pack(pady=20)
-    last_center.pack(side=TOP, fill=BOTH, expand=1)
-    orderfood_but.pack(pady=20)
 
     #*****************bottom block*****************************
     bottom_Root = Frame(root, bg="light blue", height=50)

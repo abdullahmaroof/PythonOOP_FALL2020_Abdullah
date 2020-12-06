@@ -40,9 +40,8 @@ class voice_loginadmin(call_voice):
 class voice_system(call_voice):
     @staticmethod
     def wishme():
-        speak("Sir, Click on personal information to see your information")
+        speak("Sir, Click to order food for your meal")
         speak("or Click on about us to see our team")
-        speak("or Click to order food for your meal")
 
 class voice_menu(call_voice):
     @staticmethod
