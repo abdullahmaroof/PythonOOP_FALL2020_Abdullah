@@ -4,10 +4,9 @@ from Final_Project.foodmenu_GUI import call_menu
 from Final_Project.voice_system import voice_system
 from Final_Project.aboutus_gui import call_aboutus
 
+
 def call_system():
     root = Toplevel()
-
-
     root.geometry("800x450")
     root.title('Online Food Order System')
     root.iconbitmap(r'buy_online_5Wq_icon.ico')
