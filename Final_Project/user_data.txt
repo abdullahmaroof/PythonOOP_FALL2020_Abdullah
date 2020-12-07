@@ -48,3 +48,13 @@ Second Name: shahzad
 Email id: farah@gmail.com
 Age: 20
 Password: 1234a
+First Name: hiba
+Second Name: liaqat
+Email id: hiba@gmail.com
+Age: 24
+Password: 12345
+First Name: akmal
+Second Name: arif
+Email id: akmal@gmail.com
+Age: 19
+Password: 12345

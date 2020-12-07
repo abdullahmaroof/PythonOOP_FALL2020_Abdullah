@@ -54,7 +54,7 @@ def call_signup():
             self.pass_box = Entry(p5_right_top_bot, width=25)
             self.con_pass_box = Entry(p6_right_top_bot, width=25)
             bottom_botcenter = Frame(bottom_center, bg="gray92", height=80)
-            login_but = Button(bottom_botcenter, text="LOGIN", command= lambda : self.enter_value(), width=20, bg="light blue", font=('arial',10,'bold'), activebackground="black", activeforeground="white")
+            login_but = Button(bottom_botcenter, text="LOGIN", command= lambda : self.enterdata_oracle(), width=20, bg="light blue", font=('arial',10,'bold'), activebackground="black", activeforeground="white")
 
 
             center_Root.pack(side=TOP, fill=BOTH, expand=1)
@@ -130,9 +130,10 @@ def call_signup():
                     con.close()
 
                 except Exception as es:
-                    messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
+                    pass
+                   # messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
         def enterdata_oracle(self):
-
+            messagebox.showinfo("data"+str(self.pass_box.get()))
             if self.firstname_box.get() == "" or self.lastname_box.get() == "" or self.email_box.get() == "" or self.age_box.get() == "Select Age" or self.pass_box.get() == "" or self.con_pass_box.get() == "":
                 messagebox.showerror("ERROR", "Please fill all fields", parent=self.root)
             elif self.pass_box.get() != self.con_pass_box.get():
@@ -151,10 +152,13 @@ def call_signup():
                     self.clear()
                     signin()
                 except Exception as es:
-                    messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
-
+                    pass
+                    #messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
     root = Toplevel()
     obj = gui_signup(root)
     voice_signup.wishme()
     mainloop()
+
+def passw(password):
+    print(password)
