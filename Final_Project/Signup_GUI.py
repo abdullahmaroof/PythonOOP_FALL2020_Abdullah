@@ -3,8 +3,8 @@ from PIL import ImageTk, Image
 from Final_Project.login_GUI import signin
 from Final_Project.voice_system import voice_signup
 from tkinter import ttk, messagebox
-from sqlite3 import *
-from cx_Oracle import *
+import sqlite3
+import cx_Oracle
 
 
 def call_signup():
@@ -54,7 +54,7 @@ def call_signup():
             self.pass_box = Entry(p5_right_top_bot, width=25)
             self.con_pass_box = Entry(p6_right_top_bot, width=25)
             bottom_botcenter = Frame(bottom_center, bg="gray92", height=80)
-            login_but = Button(bottom_botcenter, text="LOGIN", command= lambda : self.enterdata_oracle(), width=20, bg="light blue", font=('arial',10,'bold'), activebackground="black", activeforeground="white")
+            login_but = Button(bottom_botcenter, text="LOGIN", command= lambda : self.enter_value(), width=20, bg="light blue", font=('arial',10,'bold'), activebackground="black", activeforeground="white")
 
 
             center_Root.pack(side=TOP, fill=BOTH, expand=1)
@@ -120,45 +120,39 @@ def call_signup():
 
 
         def enter_value(self):
-
-                try:
-                    con = connect("UserInfo.db")
-                    cursor = con.cursor()
-                    sql = "INSERT INTO UserData VALUES ('"+self.firstname_box.get()+"','"+self.lastname_box.get()+"','"+self.email_box.get()+"','"+self.age_box.get()+"','"+self.pass_box.get()+"')"
-                    cursor.execute(sql)
-                    con.commit()
-                    con.close()
-
-                except Exception as es:
-                    pass
-                   # messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
-        def enterdata_oracle(self):
-            messagebox.showinfo("data"+str(self.pass_box.get()))
             if self.firstname_box.get() == "" or self.lastname_box.get() == "" or self.email_box.get() == "" or self.age_box.get() == "Select Age" or self.pass_box.get() == "" or self.con_pass_box.get() == "":
                 messagebox.showerror("ERROR", "Please fill all fields", parent=self.root)
             elif self.pass_box.get() != self.con_pass_box.get():
                 messagebox.showerror("Password", "Please enter same password in confirm password", parent=self.root)
             else:
                 try:
-                    con = connect("system/qw12er34ty56@//localhost:1521/orcl.168.0.102")
+                    con = sqlite3.connect("UserInfo.db")
                     cursor = con.cursor()
-                    sql = "INSERT INTO UserData VALUES ('" + self.firstname_box.get() + "','" + self.lastname_box.get() + "','" + self.email_box.get() + "','" + self.age_box.get() + "','" + str(self.pass_box.get()) + "')"
+                    sql = "INSERT INTO UserData VALUES ('"+self.firstname_box.get()+"','"+self.lastname_box.get()+"','"+self.email_box.get()+"','"+self.age_box.get()+"','"+self.pass_box.get()+"')"
                     cursor.execute(sql)
                     con.commit()
                     con.close()
-                    self.enter_value()
                     messagebox.showinfo("Successfull", "Thank you!!! for signup", parent=self.root)
                     self.data_file()
                     self.clear()
+                    self.enterdata_oracle()
                     signin()
                 except Exception as es:
-                    pass
-                    #messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
+                   messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
+
+        def enterdata_oracle(self):
+            try:
+                conn = cx_Oracle.connect("system/qw12er34ty56@//localhost:1521/orcl.168.0.102")
+                cur = conn.cursor()
+                oracle = "INSERT INTO UserData VALUES ('" + self.firstname_box.get() + "','" + self.lastname_box.get() + "','" + self.email_box.get() + "','" + self.age_box.get() + "','" + str(self.pass_box.get()) + "')"
+                cur.execute(oracle)
+                conn.commit()
+                conn.close()
+            except Exception as es:
+                pass
+                #messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
     root = Toplevel()
     obj = gui_signup(root)
     voice_signup.wishme()
     mainloop()
-
-def passw(password):
-    print(password)

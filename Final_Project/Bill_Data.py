@@ -413,7 +413,7 @@ class fbiryani_zinger(for_bill):
     rand_value = randint(1000, 4000)
     food = "Biryani"
     flavour = "Zinger"
-    servewith = "Salt"
+    servewith = "Salad"
     price = 400
     note = "Your order will be serve in 20 min. Thank you!!!"
 
@@ -440,7 +440,7 @@ class fbiryani_beef(for_bill):
     rand_value = randint(1000, 4000)
     food = "Biryani"
     flavour = "Beef"
-    servewith = "Salt"
+    servewith = "Salad"
     price = 600
     note = "Your order will be serve in 20 min. Thank you!!!"
 
@@ -467,7 +467,7 @@ class fbiryani_chicken(for_bill):
     rand_value = randint(1000, 4000)
     food = "Biryani"
     flavour = "Chicken"
-    servewith = "Salt"
+    servewith = "Salad"
     price = 350
     note = "Your order will be serve in 20 min. Thank you!!!"
 
@@ -494,7 +494,7 @@ class fbiryani_Chrice(for_bill):
     rand_value = randint(1000, 4000)
     food = "Biryani"
     flavour = "Chinese Rice"
-    servewith = "Salt"
+    servewith = "Salad"
     price = 300
     note = "Your order will be serve in 20 min. Thank you!!!"
 
@@ -520,6 +520,6 @@ class fbiryani_bbq(for_bill):
     rand_value = randint(1000, 4000)
     food = "Biryani"
     flavour = "Bar BQ"
-    servewith = "Salt"
+    servewith = "Salad"
     price = 700
     note = "Your order will be serve in 20 min. Thank you!!!"
