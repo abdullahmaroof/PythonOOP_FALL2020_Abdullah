@@ -36,7 +36,7 @@ def call_adminsys():
             right_bottom_cenroot = Frame(bottom_center, bg="gray92", height=80)
             aboutus_but = Button(right_bottom_cenroot, text="Bills Data", command= lambda : excelbillReportGeneration(), width=25, height=2, bg="light blue", font=('arial',10,'bold'), activebackground="black", activeforeground="white")
             last_center = Frame(center_Root, bg="gray92", height=80)
-            left_last_cenroot = Frame(last_center, bg="gary92", height=80)
+            left_last_cenroot = Frame(last_center, bg="gray92", height=80)
             menu_but = Button(left_last_cenroot, text="Menu Data", command=lambda: excelMENUReportGeneration(),
                               width=25, height=2, bg="light blue", font=('arial', 10, 'bold'), activebackground="black",
                               activeforeground="white")
