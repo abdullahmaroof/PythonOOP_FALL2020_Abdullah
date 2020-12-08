@@ -8,16 +8,6 @@ Second Name: rafique
 Email id: shifa@gmail.com
 Age: 20
 Password: 1234
-First Name: assad
-Second Name: sdad
-Email id: 
-Age: 37
-Password: 1234
-First Name: assad
-Second Name: sdad
-Email id: 213e312
-Age: 37
-Password: 1234
 First Name: ammad
 Second Name: anwar
 Email id: ammad@gmail.com
@@ -28,26 +18,11 @@ Second Name: anwar
 Email id: 
 Age: 20
 Password: 1234
-First Name: noor
-Second Name: anwar
-Email id: noor@gmail.com
-Age: 20
-Password: 1234
 First Name: farah
 Second Name: shahzad
 Email id: farah@gmail.com
 Age: 20
 Password: 1234
-First Name: farah
-Second Name: shahzad
-Email id: farah@gmail.com
-Age: 20
-Password: 1234
-First Name: farah
-Second Name: shahzad
-Email id: farah@gmail.com
-Age: 20
-Password: 1234a
 First Name: hiba
 Second Name: liaqat
 Email id: hiba@gmail.com
