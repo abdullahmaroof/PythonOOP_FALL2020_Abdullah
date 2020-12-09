@@ -68,3 +68,13 @@ Second Name: hussain
 Email id: maroof@gmail.com
 Age: 38
 Password: 1234
+First Name: huzaifa
+Second Name: khan
+Email id: huzaifa@gmail.com
+Age: 20
+Password: 12345
+First Name: imran
+Second Name: liaqat
+Email id: imran@gmail.com
+Age: 21
+Password: 12345

@@ -132,7 +132,7 @@ def call_signup():
                     cursor.execute(sql)
                     con.commit()
                     con.close()
-                    messagebox.showinfo("Successfull", "Thank you!!! for signup", parent=self.root)
+                    messagebox.showinfo("Successfull","Thank you!!! for signup", parent=self.root)
                     self.data_file()
                     self.clear()
                     self.enterdata_oracle()
