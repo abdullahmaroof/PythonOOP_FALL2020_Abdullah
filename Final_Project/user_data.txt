@@ -78,3 +78,8 @@ Second Name: liaqat
 Email id: imran@gmail.com
 Age: 21
 Password: 12345
+First Name: qasim
+Second Name: riaz
+Email id: qasim@gmail.com
+Age: 24
+Password: 1234

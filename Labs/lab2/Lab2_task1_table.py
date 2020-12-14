@@ -24,5 +24,5 @@ lowerrang = int(input("Enter start range of table: "))
 upperrang = int(input("Enter end range of table: "))
 upperrang += 1
 for each_num in range(lowerrang,upperrang):
-    ans = tablenum*ran_
-    print(tablenum," * ",ran_," = ",ans)
+    ans = tablenum*ran
+    print(tablenum," * ",ran," = ",ans)

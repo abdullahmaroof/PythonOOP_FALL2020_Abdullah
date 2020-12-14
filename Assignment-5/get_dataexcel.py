@@ -1,12 +1,8 @@
 import xlsxwriter as excelWriter
-from sqlite3 import *
 import datetime
 
-con = connect("mystudent.db")
-sql = """SELECT * FROM student"""
-cursor = con.cursor()
-cursor.execute(sql)
-x = cursor.fetchall()
+
+dataList = [[1, "Ali", "Yunus", 45],[2,"Kamran","Latif",49, "55%"],[3,"Jamil","Rizwan",41],[4,"Hussain","Aslam",39,"30%"],[5,"Usman", "Hassan",31]]
 
 def excelReportGeneration(x):
     currentDataAndTime = datetime.datetime.now()
@@ -14,16 +10,16 @@ def excelReportGeneration(x):
     excelfileName = "report-" + str(dateAndTime) + ".xlsx"
     myWorkbook = excelWriter.Workbook(excelfileName)
     myWorksheet = myWorkbook.add_worksheet()
-    row = 0
-    column = 0
+    row = 3
+    column = 4
 
     for eachRow in x:
         for eachItem in eachRow:
             myWorksheet.write(row, column, eachItem)
             column = column + 1
         row = row + 1
-        column = 0
+        column = 4
     myWorkbook.close()
 
-excelReportGeneration(x)
-print(x)
+excelReportGeneration(dataList)
+

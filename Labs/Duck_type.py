@@ -1,21 +1,21 @@
-class duck():
-    def quack(self):
-        print("The duck quacks")
-    def swim(self):
-        print("The duck swims")
+class std1():
+    def intro(self):
+        print("Abdullah is a student.")
+    def parent(self):
+        print("Abdullah has parents.")
 
-class hen():
-    def quack(self):
-        print("The hen quacks like a duck")
-    def swim(self):
-        print("The hen swims like a duck")
+class std2():
+    def intro(self):
+        print("Ali is student like Abdullah.")
+    def parent(self):
+        print("Ali has parents like Abdullah")
 
 def mangofunction(o):
-    o.quack()
-    o.swim()
+    o.intro()
+    o.parent()
 
-d1 = duck()
-h1 = hen()
+student1 = std1()
+student2 = std2()
 
-mangofunction(d1)
-mangofunction(h1)
+mangofunction(student1)
+mangofunction(student2)
