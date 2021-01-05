@@ -20,7 +20,7 @@ print("**********Q2 start******************")
 print("checking by for loop")
 lowerrang = int(input("Enter start range of table: "))
 upperrang = int(input("Enter end range of table: "))
-upperrang +=1
+upperrang = +1
 for eachnum in range(lowerrang,upperrang):
     if eachnum %2 == 0:
         print("The number is even: ",eachnum)
@@ -55,11 +55,11 @@ lowerrang = int(input("Enter start range of table: "))
 upperrang = int(input("Enter end range of table: "))
 upperrang +=1
 for num in range(lowerrang,upperrang):
-    if num%2 == 0:
+    if num%3 == 0:
         even += 1
     else:
         odd += 1
-print("total even numbers are ",even)
+print("total numbers are ",even)
 print("total even numbers are ",odd)
 print("\n------------------------------\n")
 

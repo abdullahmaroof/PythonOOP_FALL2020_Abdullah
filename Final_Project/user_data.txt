@@ -83,3 +83,13 @@ Second Name: riaz
 Email id: qasim@gmail.com
 Age: 24
 Password: 1234
+First Name: ali
+Second Name: oun
+Email id: ali@gmail.com
+Age: 34
+Password: 1234
+First Name: fatima
+Second Name: amir
+Email id: fatima@gmail.com
+Age: 25
+Password: 1234
