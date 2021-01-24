@@ -93,3 +93,8 @@ Second Name: amir
 Email id: fatima@gmail.com
 Age: 25
 Password: 1234
+First Name: moattar
+Second Name: usmani
+Email id: mottor@gmail.com
+Age: 40
+Password: 1234
