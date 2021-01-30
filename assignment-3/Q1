@@ -1,0 +1,25 @@
+#changing upper case letter into lower and lower into upper
+
+print("----------------------------------------------")
+print("*         Programming Fundamental            *")
+print("*             Assignment-3                   *")
+print("*                                            *")
+print("* Name: Fatima Amir                          *")
+print("* Rollno : BDSM-F20-001                      *")
+print("* Section: 1A                                *")
+print("* Program: BS Data Science                   *")
+print("----------------------------------------------")
+print("\n\nQ:Make a program which we will covert lower case into upper and vice virsa?")
+print("\nProgram:-")
+sent = input("\n* Enter a Sentences: ")
+out = ""
+
+for x in range(0,len(str(sent))):
+    if sent[x].islower():
+        out = out + sent[x].upper()
+    elif sent[x].isupper():
+        out = out + sent[x].lower()
+    else:
+        out = out + sent[x]
+
+print("\n* Output: ",out)
