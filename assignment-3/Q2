@@ -1,0 +1,31 @@
+#Fibonnaci series
+
+print("----------------------------------------------")
+print("*         Programming Fundamental            *")
+print("*             Assignment-3                   *")
+print("*                                            *")
+print("* Name: Fatima Amir                          *")
+print("* Rollno : BDSM-F20-001                      *")
+print("* Section: 1A                                *")
+print("* Program: BS Data Science                   *")
+print("----------------------------------------------")
+print("\n\nQ:Make a program which we will get limit from user for fibonnaci series?")
+print("\nProgram:-")
+
+fib = [0]
+limit = int(input("\n* Enter limit: "))
+
+num1 = 0
+num2 = 1
+
+for x in range(0,limit):
+    if(num1<limit and num2<limit):
+        ans = num1 + num2
+        fib.append(ans)
+        num2 = num1
+        num1 = ans
+fib.pop()
+print("\n* Fibonnaci Series: ",fib)
+
+
+
