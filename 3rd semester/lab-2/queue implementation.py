@@ -16,6 +16,7 @@ def push():
     stack_data.append(user_value)
     print("\t",stack_data)
 
+
 def pop():
     if not stack_data:
         print("\n\tThe list is empty")

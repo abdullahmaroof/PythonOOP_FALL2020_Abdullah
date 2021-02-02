@@ -10,6 +10,7 @@ print("* Instructor: Sir Tayyab                              *")
 print("*******************************************************")
 print("\n\tTask: Simple implementation of queue by using pop, push, display, peak/top function")
 
+
 stack_data = []
 remove_value = []
 def push():
