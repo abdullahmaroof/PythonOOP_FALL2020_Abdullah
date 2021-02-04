@@ -55,7 +55,6 @@ while True:
         print(second_list)
         print(answer)
 
-
     elif press == 6:
         break
     else:
