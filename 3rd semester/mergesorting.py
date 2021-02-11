@@ -3,6 +3,7 @@ n = len(sort)
 
 for i in range(0,n-1):
     min = i
+    sort[min] = sort[i]
     for j in range(i+1):
         if(sort[j]>sort[min]):
             temp = sort[j]
