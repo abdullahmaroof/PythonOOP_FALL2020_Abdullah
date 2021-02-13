@@ -14,4 +14,4 @@ for i in range(0,n-1):
     temp = marks_list[i]
     marks_list[i] = marks_list[min]
     marks_list[min] = temp
-print("\nBubble sorted list: ",marks_list)
+print("\nSelection sorted list: ",marks_list)
