@@ -5,7 +5,7 @@ for marks in file:
     marks_list.append(int(marks))
 print("Marks list: ",marks_list)
 n= len(marks_list)
-#bubblesort
+#selectionsort
 for i in range(0,n-1):
     min = i
     for j in range(i,n):

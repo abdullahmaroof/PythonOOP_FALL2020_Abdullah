@@ -9,8 +9,6 @@ def mergeSort(myList):
         for y in range(int(n/2),n):
             right_list.append(myList[y])
 
-        print("\nLeft list: ",left_list)
-        print("\nRight list: ", right_list)
         mergeSort(left_list)
         mergeSort(right_list)
         i = 0
