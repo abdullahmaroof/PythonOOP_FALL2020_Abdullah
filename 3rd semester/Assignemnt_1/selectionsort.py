@@ -13,4 +13,4 @@ for i in range(0,r-1):
             temp = markslist[i]
             markslist[i] = markslist[min]
             markslist[min] = temp
-print("markslist)
+print(markslist)
