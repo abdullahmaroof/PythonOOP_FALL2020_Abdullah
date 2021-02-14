@@ -1,16 +1,17 @@
-
-markslist = []
+#get data from file
+marks_list = []
 file = open("marks.txt","r")
-for x in file:
-    markslist.append(int(x))
-
-r= len(markslist)
-for i in range(0,r-1):
+for marks in file:
+    marks_list.append(int(marks))
+print("Marks list: ",marks_list)
+n= len(marks_list)
+#selectionsort
+for i in range(0,n-1):
     min = i
-    for j in range(i,r):
-        if(markslist[j]<markslist[min]):
+    for j in range(i,n):
+        if(marks_list[j]<marks_list[min]):
             min = j
-            temp = markslist[i]
-            markslist[i] = markslist[min]
-            markslist[min] = temp
-print(markslist)
+    temp = marks_list[i]
+    marks_list[i] = marks_list[min]
+    marks_list[min] = temp
+print("\nSelection sorted list: ",marks_list)
