@@ -5,7 +5,7 @@ for x in range(0,limit):
     v = x+1
     value = int(input("Enter a value in list= "))
     sort.append(value)
-print("\nUn sort apply",sort)
+print("\nUn sort array",sort)
 n= len(sort)
 for i in range(0,n-1):
     for j in range(0,n-i-1):
