@@ -5,9 +5,6 @@ def sorting(list):
             temp = list[i-1]
             list[i-1] = list[i]
             list[i] = temp
-            print(list[i])
-            print(list[i - 1])
-            print("index:",i)
             i = i-1
 
 
