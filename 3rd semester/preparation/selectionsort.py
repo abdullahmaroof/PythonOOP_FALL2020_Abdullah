@@ -5,7 +5,6 @@ for i in range(0,endrange):
     for x in range(i,endrange):
         if sort[min]>sort[x]:
             min = x
-            print("value", sort[min], "   ", sort[i])
     temp = sort[min]
     sort[min] = sort[i]
     sort[i] = temp

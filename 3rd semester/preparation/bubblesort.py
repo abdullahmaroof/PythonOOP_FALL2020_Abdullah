@@ -7,6 +7,6 @@ for i in range(0,endrange):
             temp = sorting[y]
             sorting[y] = sorting[y+1]
             sorting[y+1] = temp
-            print("value",sorting[y],"   ",sorting[y+1])
+
 
 print(sorting)
