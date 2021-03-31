@@ -39,9 +39,25 @@ class single_linklist:
                 point = point.next
             point.next = Node(data,None)
 
+    def insert_at(self, index, data):
+        if index<0 or index>self.tell_length():
+            print("Invalid index")
+        elif index==0:
+            self.insert_at_start()
+
+        pointer = 0
+        point = self.head
+        while point:
+            if pointer == index-1:
+                node = Node(data,point.next)
+                point.next = node
+                break
+            pointer += 1
+
 
 list = single_linklist()
 list.insert_at_start(12)
 list.insert_at_start(32)
 list.insert_at_end(89)
-print(list.tell_length())
+list.insert_at(1,23)
+list.printlist()
