@@ -54,10 +54,27 @@ class single_linklist:
                 break
             pointer += 1
 
+    def remove_from(self, index):
+        if index<0 or index>self.tell_length():
+            print("Invalid index")
+
+        elif index==0:
+            self.head = self.head.next
+
+        else:
+            pointer = 0
+            point = self.head
+            while point:
+                if pointer == index-1:
+                    point.next = point.next.next
+                    break
+                pointer += 1
 
 list = single_linklist()
 list.insert_at_start(12)
 list.insert_at_start(32)
 list.insert_at_end(89)
 list.insert_at(1,23)
+list.printlist()
+list.remove_from(2)
 list.printlist()
