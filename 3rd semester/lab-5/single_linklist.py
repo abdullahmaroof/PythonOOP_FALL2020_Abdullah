@@ -53,8 +53,21 @@ class single_linklist:
                 point.next = node
                 break
             pointer += 1
+
     def remove_from_start(self):
         self.head = self.head.next
+
+    def remove_from_end(self):
+        if self.head == None:
+            None
+        elif self.head.next ==None:
+            self.head = None
+
+        else:
+            point = self.head
+            while point.next.next:
+                point = point.next
+            point.next = None
 
     def remove_from(self, index):
         if index<0 or index>self.tell_length():
@@ -78,5 +91,5 @@ list.insert_at_start(32)
 list.insert_at_end(89)
 list.insert_at(1,23)
 list.printlist()
-list.remove_from_start()
+list.remove_from_end()
 list.printlist()
