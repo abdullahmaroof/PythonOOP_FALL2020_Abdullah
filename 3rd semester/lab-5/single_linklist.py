@@ -18,6 +18,14 @@ class single_linklist:
                 point = point.next
             print(linklist)
 
+    def tell_length(self):
+        length = 0
+        point = self.head
+        while point:
+            length += 1
+            point = point.next
+        return length
+
     def insert_at_start(self, data):
         node = Node(data, self.head)
         self.head = node
@@ -36,4 +44,4 @@ list = single_linklist()
 list.insert_at_start(12)
 list.insert_at_start(32)
 list.insert_at_end(89)
-list.printlist()
+print(list.tell_length())
