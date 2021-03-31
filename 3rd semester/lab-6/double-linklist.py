@@ -32,6 +32,14 @@ class double_linklist:
                 point = point.pervious
             print(linklist)
 
+    def tell_length(self):
+        length = 0
+        point = self.head
+        while point:
+            length += 1
+            point = point.next
+        return length
+
+
 list = double_linklist()
-list.printlist_forward()
-list.printlist_reverse()
+print(list.tell_length())
