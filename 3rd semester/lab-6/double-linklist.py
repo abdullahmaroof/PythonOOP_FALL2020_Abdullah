@@ -54,6 +54,25 @@ class double_linklist:
                 point = point.next
             point.next = Node(point,data,None)
 
+    def insert_at(self, index, data):
+        if index<0 or index>self.tell_length():
+            print("Invalid index")
+        elif index==0:
+            self.insert_at_start()
+
+        pointer = 0
+        point = self.head
+        while point:
+            if pointer == index-1:
+                print("pointer:",pointer," ",self.head,"  ",data,"  ",point.next)
+                node = Node(self.head,data,point.next)
+                print("data:  ",node)
+                point.next = node
+                node = point.previous
+                point.previous = point.next
+                break
+            pointer += 1
+
 
 
 
@@ -66,5 +85,7 @@ list.insert_at_start(11)
 print(list.tell_length())
 list.printlist_forward()
 list.insert_at_end(100)
+list.printlist_forward()
+list.insert_at(4,140)
 list.printlist_forward()
 
