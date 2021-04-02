@@ -46,3 +46,4 @@ print("\n\narray of numpy by using ones: ")
 arr6 = math.ones([3,3])
 print("in ones, complete matrix has value zero we will give number of rows and columns")
 print(arr6)
+
