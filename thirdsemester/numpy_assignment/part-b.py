@@ -1,5 +1,4 @@
 from thirdsemester.numpy_assignment.part_a import *
-import numpy as np
 new_arr3 = arr3
 new_arr4 = arr4
 print("\nslicing arr3 in 3x3 by new_arr3")
