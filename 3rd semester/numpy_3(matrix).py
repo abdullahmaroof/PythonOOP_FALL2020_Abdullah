@@ -8,4 +8,9 @@ print(arr2)
 print("dot product:")
 arr3 = np.dot(arr1,arr2)
 print(arr3)
+print("element wise square of arr1: ")
+arr4 = arr1 * arr1
+print(arr4)
+
+
 
