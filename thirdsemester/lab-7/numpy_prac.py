@@ -74,3 +74,11 @@ print("in eyes, diagonal matrix we will give number of rows and columns, we can 
 print(arr9)
 arr9_diagonal = math.eye(3,3,k=-1)
 print(arr9_diagonal)
+
+print("\n\narray of numpy by using random: ")
+arr10 = math.random.rand(3,3)
+print("in random rand, it gives values between 0 and 1 and all are random")
+print(arr10)
+arr10 = math.random.randn(3,3)
+print("in random randn, it gives values of 0 and 1 and all are random but it can be positive or negative")
+print(arr10)
