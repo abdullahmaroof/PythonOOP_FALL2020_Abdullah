@@ -47,3 +47,12 @@ arr6 = math.ones([3,3])
 print("in ones, complete matrix has value zero we will give number of rows and columns")
 print(arr6)
 
+print("\n\narray of numpy by using empty: ")
+arr7 = math.empty(7,dtype="int")
+print("in empty, complete array has random values: ")
+print(arr7)
+print("In empty we can put values to:")
+for i in range(8):
+    arr7[i:]= i
+print(arr7)
+
