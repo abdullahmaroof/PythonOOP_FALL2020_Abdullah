@@ -56,3 +56,12 @@ for i in range(8):
     arr7[i:]= i
 print(arr7)
 
+print("\n\narray of numpy by using linspace: ")
+arr8 = math.linspace(2,3)
+print("in linspace, we give start and end point and we can also give how many values and endpoint=False we use when we "
+      "want numpy to print valuesnot according to end point: ")
+print(arr8)
+arr8_limit = math.linspace(2,10,num=5,dtype="int")
+print(arr8_limit)
+arr8_endfalse = math.linspace(2,10,num=5,dtype="int",endpoint=False)
+print(arr8_endfalse)
