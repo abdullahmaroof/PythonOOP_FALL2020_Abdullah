@@ -26,7 +26,7 @@ print("slicing of 3 D array, "
       "(column)start:end range(it must be one more value):step(optional)]")
 threedarr = np.array((([1,3,5,7],[12,34,21,78]),([5,32,11,78],[58,96,66,45])))
 print("3 D array: ",threedarr)
-print("slicing method \'[:,:]\' :",twodarr[:,:])
+print("slicing method \'[:,:,:]\' :",threedarr[:,:,:])
 print("slicing method \'[2:,1:]\' :",twodarr[2:,1:])
 print("slicing method \'[:2,:2]\' :",twodarr[:2,:2])
 print("slicing method \'[1:3,0:3]\' :",twodarr[1:3,0:3])
