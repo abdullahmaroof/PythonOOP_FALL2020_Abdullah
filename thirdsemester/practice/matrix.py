@@ -21,7 +21,7 @@ elif press == 2:
 elif press == 3:
     print("\n")
     for i in range(no):
-        value = int(input("Enter a value in matrix at index :"))
+        value = int(input("Enter a value in matrix:"))
         matrix[i] = value
     matrix = matrix.reshape(row,column)
     print("Matrix:")
