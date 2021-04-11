@@ -10,16 +10,14 @@ for line in file:
     else:
         name.append(y)
 
-for i in name:
-    data["name"] = i
-    for x in age:
-        data["age"] = x
+for i in range(0,len(name)):
+        data["name"+str(i)]= name[i]
+        data["age"+str(i)] = age[i]
 
 
 
 
 
 
-# print(name)
-# print(age)
+print(data)
 file.close()
