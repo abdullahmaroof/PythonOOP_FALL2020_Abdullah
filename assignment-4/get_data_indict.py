@@ -1,7 +1,7 @@
 file = open("studentData.txt", "r")
 name = []
 age = []
-data = {}
+data = {'name': name, 'age': age}
 
 for line in file:
     y = line.strip()
@@ -10,9 +10,7 @@ for line in file:
     else:
         name.append(y)
 
-for i in range(0,len(name)):
-        data["name"+str(i)]= name[i]
-        data["age"+str(i)] = age[i]
+
 
 
 
